@@ -1,0 +1,187 @@
+{
+  "main": {
+    "id": "c3be5136d5b3234d",
+    "type": "split",
+    "children": [
+      {
+        "id": "f4cbd3e69d2afa9d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4032b5b7738825f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dispersión Electrón-Muón.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dispersión Electrón-Muón"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "15be2131b5d21296",
+    "type": "split",
+    "children": [
+      {
+        "id": "a0a75f4312bd623a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0424d846b41d7db6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "5c26572653534b4f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "0f2d203d9ba79fdb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ba073ec4186818f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "9706e51e2990754e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "739a7e7abef45213",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Física de Partículas/Dispersión Electrón-Positrón.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de Dispersión Electrón-Positrón"
+            }
+          },
+          {
+            "id": "abc41a79ddad1249",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Física de Partículas/Dispersión Electrón-Positrón.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de Dispersión Electrón-Positrón"
+            }
+          },
+          {
+            "id": "34d1b0538d10dcea",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "75571abc76558920",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Física de Partículas/Dispersión Electrón-Positrón.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de Dispersión Electrón-Positrón"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "4032b5b7738825f2",
+  "lastOpenFiles": [
+    "Sin título.md",
+    "Dispersión Electrón-Muón.md",
+    "trash/Dispersión Electrón-Electrón..md",
+    "trash/Dispersión Electrón-Muón.md",
+    "trash/Dispersión Electrón-Positrón.md",
+    "images/20250612221641.png",
+    "images/20250612221751.png",
+    "Pasted image 20250612221446.png",
+    "Pasted image 20250612221621.png",
+    "images",
+    "trash",
+    "README.md",
+    "Física de Partículas"
+  ]
+}
