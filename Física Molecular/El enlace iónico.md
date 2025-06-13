@@ -16,11 +16,9 @@ $$
 V(R) = -\frac{e^2}{4\pi\epsilon_0R} + \frac{b}{R^9}
 $$
 
-Siendo $b$ un parámetro característico de cada molécula. Interpretemos físicamente que representa cada término en este potencial fenomenológico. 
+Siendo $b$ un parámetro característico de cada molécula. Las configuraciones electrónicas de estado fundamental del $\text{Na}$ y del $\text{Cl}$ son $[\text{Ne}]3s$ y $[\text{Ne}]3s^23p^5$, respectivamente.  La separación de equilibrio de la molécula de $\text{NaCl}$ es de $2.51$ Å. Las energías de ionización del $\text{Na}$ y del $\text{Cl}$ son $5.14 \text{eV}$ eV y $13.02\text{eV}$, respectivamente y las afinidades electrónicas son $0.55\text{eV}$ y $3.72\text{eV}$, respectivamente. Hallemos la energía necesaria para separar el $\text{Na}$ y el $\text{Cl}$ a una distancia infinita. 
 
-Las configuraciones electrónicas de estado fundamental del $\text{Na}$ y del $\text{Cl}$ son $[\text{Ne}]3s$ y $[\text{Ne}]3s^23p^5$, respectivamente.  La separación de equilibrio de la molécula de $\text{NaCl}$ es de $2.51$ Å. Las energías de ionización del $\text{Na}$ y del $\text{Cl}$ son $5.14 \text{eV}$ eV y $13.02\text{eV}$, respectivamente y las afinidades electrónicas son $0.55\text{eV}$ y $3.72\text{eV}$, respectivamente. Hallemos también la energía necesaria para separar el $\text{Na}$ y el $\text{Cl}$ a una distancia infinita. 
-
-Notemos el potencial esta compuesto por dos términos. Un termino atractivo, el cual va como $1/R$ y que se debe a la interacción colombiana entre los iones, los cuales tienen cargas $e$ opuestas. Por otra parte, se observa un termino repulsivo, el cual va como $1/R^9$. 
+Notemos que el potencial esta compuesto por dos términos. Un termino atractivo, el cual va como $1/R$ y que se debe a la interacción colombiana entre los iones, los cuales tienen cargas $e$ opuestas. Por otra parte, se observa un termino repulsivo, el cual va como $1/R^9$. 
 
 Analicemos mas a fondo este ultimo termino. Para ello, hallemos la tasa de crecimiento del potencial en función de la separación inter-nuclear:
 
@@ -49,6 +47,7 @@ E = V(\infty) - V(R_0)= \frac{e^2}{4\pi\epsilon_0R_0}(1-\frac{R_0^8}{9R_0^8}) = 
 $$
 
 Reemplazando:
+
 - $e = -1.602176634 \times 10^{-19} \text{C}$
 - $R_0 = 2.51 \text{Å} = 2.51 × 10^{-10} \text{m}$
 - $k = \frac{1}{4\pi\epsilon_0} = 8.9875517873681764 \times 10^9 \, \text{N m}^2/\text{C}^2$
@@ -73,7 +72,7 @@ $$ \Rightarrow \text{Na}^+\text{Cl}^- \rightarrow \text{Na} + \text{Cl} \qquad E
 
 Finalmente la energía de disociación del $\text{NaCl}$ será de $E = 3.68\text{eV}$.El proceso puede verse mas claramente en el siguiente diagrama:
 
-![](assets/20250613143054.png)
+![](../assets/20250613143054.png)
 
 ### Ejemplo
 
@@ -96,7 +95,10 @@ $$
 Debemos expresar $E$ en términos de la separación de equilibrio $R_0$ y la curvatura de la energía potencial $K$. Para ello derivamos la expresión del potencial:
 
 $$ 
-V'(R) = -\alpha a \exp(-aR) + \frac{e^2}{4\pi\epsilon_0R^2} \qquad V''(R) = \alpha a^2 \exp(-aR) - \frac{e^2}{2\pi\epsilon_0 R^3} 
+V'(R) = -\alpha a \exp(-aR) + \frac{e^2}{4\pi\epsilon_0R^2}$$
+
+$$
+V''(R) = \alpha a^2 \exp(-aR) - \frac{e^2}{2\pi\epsilon_0 R^3} 
 $$
 
 Para la separación de equilibrio $R_0$ se verifica que:
@@ -128,6 +130,7 @@ E = \frac{ke^2}{R_0^2}\left(1 - \frac{1}{K R_0^3 / ke^2 + 2}\right)
 $$
 
 Reemplazando:
+
 * $k = 8.9876\times 10^9 \, \text{N m}^2/\text{C}^2$
 * $e = 1.602176634 \times 10^{-19} \text{C}$.
 * $R_0 = 1.56 \times 10^{-10} \text{m}$

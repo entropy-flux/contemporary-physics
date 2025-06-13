@@ -1,0 +1,268 @@
+Hasta el momento se considero al núcleo atómico como un punto con masa y carga positiva. Si bien las principales propiedades de los átomos se pueden explicar gracias al comportamiento de sus electrones, hay cuestiones tales como la masa atómica o la radiactividad, entre tantas otras, que solo pueden ser abordadas mediante el estudio de los núcleos atómicos. 
+
+Las primeras investigaciones del núcleo atómico fueron conducidas por Rutherford, el fundador de la física nuclear. Por aquel entonces, ya se habían descubierto tres tipos de radiaciones procedentes de los átomos.
+
+- Partículas alfa: Iones de helio con carga positiva.
+- Partículas beta: Partículas ligeras cargadas con alta energía.
+- Rayos gamma: Radiación electromagnética de alta energía que se emite por el núcleo de los átomos
+
+La existencia del núcleo atómico fue deducida del experimento de Rutherford, donde se bombardeó una lámina fina de oro con partículas alfa, emitidas por rocas radiactivas. La mayoría de esas partículas traspasaban la lámina, pero algunas rebotaban, lo cual demostró la existencia de un minúsculo núcleo atómico. 
+
+### Ejemplo: Dispersión de Rutherford. 
+
+Es posible mediante experimentos de este tipo estimar el radio nuclear. Veamos un ejemplo. En la siguiente figura se muestran datos experimentales de dispersión de partículas $\alpha$ sobre átomos de plomo. 
+
+
+![[20250319014927.png]]
+
+Un proyectil cargado se desacelera a medida que se acerca al núcleo intercambiando su energía cinética por energía potencial electrostática debido a la repulsión nuclear. Esta energía potencial esta dada por:
+
+$$ 
+E = k \frac{ Z _1 Z_2e^2}{r} 
+$$
+
+Donde $Z_1$ y $Z_2$ son las cargas de las partículas $\alpha$ y el núcleo. La máxima energía potencial y mínima energía cinética se dan cuando la distancia entre el proyectil y el núcleo es mínima, como muestra la siguiente figura:
+
+![[20250319023517.png]]
+
+
+Podemos escribir entonces la energía cinética de la partícula $\alpha$ como:
+
+$$ 
+K_{\alpha} = \frac{1}{2}mv^2 = \frac{1}{2}mv_{mín}^2 + \frac{1}{4\pi\epsilon_0} \frac{Z_1Z_2e^2}{r_{\min}}
+$$
+
+La conservación del momento angular nos da por otra parte una expresión para $v_{mín}$:
+
+$$ 
+mvb = mv_{mín}r_{mín} \Rightarrow v_{mín} = \frac{b}{r_{\min}} v 
+$$
+Luego, reemplazando la velocidad mínima:
+
+$$
+K_{\alpha} = \frac{b^2}{r_{mín}^2}K_{\alpha} +  \frac{1}{4\pi\epsilon_0} \frac{Z_1Z_2e^2}{r_{\min}}
+$$
+
+Resolvemos para hallar la distancia mínima al núcleo:
+
+$$ 
+K_{\alpha}r_{mín}^2 - \frac{Z_1Z_2e^2}{4\pi\epsilon_0}r_{mín} - b^2K_{\alpha} = 0 
+$$
+
+$$ 
+r_{mín} = \frac{Z_1Z_2e^2}{8\pi\epsilon_0K_{\alpha}} +\sqrt{\left(\frac{Z_1Z_2e^2}{8\pi\epsilon_0K_{\alpha}}\right)^2+b^2} \approx k\frac{Z_1Z_2e^2}{K_{\alpha}} 
+$$
+
+Los datos del grafico nos dice que esta relación deja de cumplirse para energías $K_{\alpha}$ mayores a $27 \text{MeV}$. Esto nos dice que para dicha energía la interacción entre el núcleo y la partícula $\alpha$ empieza a ser predominante. Luego la distancia entre la partícula $\alpha$ y el núcleo será $r_{mín}$.  Reemplazando:
+
+- $K_{\alpha} \approx 27 \text{MeV}$
+- $Z_1 = 2$, el numero atómico de una partícula $\alpha$
+- $Z_2 = 82$, el numero atómico del plomo.
+- $k = 8.9875517873681764 \times 10^9 \, \text{J m}/\text{C}^2$
+- $e = 1.602 \times 10^{-19} \text{C}$.
+
+Obtenemos un radio nuclear aproximado para el $^{208}\text{Pb}$ de $8.7 \text{fm}$. 
+
+### Ejemplo: Discos de Airy.
+
+Veamos otro ejemplo. En la figura se muestran mediciones de la intensidad dispersada de electrones de $360\text{MeV}$ y $420\text{MeV}$ por un núcleos de $^{12}C$ y $^{16}O$.
+
+
+![[20250323001410.png]]
+
+Si se considera a los electrones como ondas de Broglie, entonces se puede modelar la dispersión de los electrones por los núcleos como un problema de difracción por un objeto circular opaco, en donde el objeto circular opaco es el núcleo. La intensidad de la onda dispersada por el objeto circular opaco es:
+
+$$ 
+\sin(\theta) = 1.22 \frac{\lambda}{D} 
+$$
+
+Donde $\lambda$ es la longitud de onda de la luz y $D$ es el diámetro de la apertura circular, en este caso el diámetro del núcleo. La longitud de onda de Broglie se puede hallar de la relación:
+
+$$ 
+E = h \nu = \frac{h c}{\lambda} 
+$$
+
+En la figura, se ven los ángulos críticos en los cuales los electrones fueron dispersados. Podemos hallar el diámetro del núcleo entonces de la relación:
+
+$$ 
+D = 1.22 \frac{h c}{ E \sin(\theta)} 
+$$
+
+Reemplazando los valores críticos:
+
+- $E_{^{16}O} = 420 \text{MeV} \qquad \theta_{^{16}O} \approx 44 \degree$
+- $E_{^{12}C} = 420 \text{MeV} \qquad  \theta_{^{12}C} \approx 51 \degree$
+- $E_{^{16}O} = 360 \text{MeV} \qquad  \theta_{^{16}O} \approx 53 \degree$
+
+Pueden obtenerse radios nucleares de de $5.2\text{fm}$ para el oxígeno y $4.6\text{fm}$ para el carbono.
+
+### Nucleidos
+
+El núcleo atómico existe en una multitud de diferentes especies conocidas como nucleidos. Cada elemento corresponde a un átomo específico con diferente número de neutrones. Los nucleidos se llaman isótopos entre sí si tienen el mismo número atómico. Esta variedad de nucleidos tiene distintos valores de masa $A$ dado un número atómico $Z$.
+
+Los números $A$ y $Z$ son los números cuánticos que caracterizan a un nucleido, y definimos también el número $N$ como el número de neutrones en un núcleo, de tal forma que: 
+
+$$
+A = Z + N
+$$
+
+La designación de una especie nuclear se hace mediante la notación $^{A}_{Z}X_N,$ donde $X$ es el símbolo del elemento químico.  Las especies con el mismo número $A$ se denominan isóbaros, y las especies con el mismo número $N$ pero un $Z$ diferente se denominan isótonos. 
+
+### Abundancias  
+
+Un isótopo que existe en la naturaleza se llama isótopo natural. La abundancia de un isótopo se mide en términos de la fracción de la cantidad total de ese elemento que es ese isótopo y está relacionada con la masa de los isótopos naturales como:
+
+$$ 
+\bar{M} = \sum_{i} f_i M_i 
+$$
+
+En donde $\bar{M}$ es la masa promedio del elemento, $f_i$ es la abundancia del isótopo $i$ y $M_i$ es la masa del isótopo $i$.
+
+#### Ejemplo: Abundancia del Neón
+
+Las masas atómicas y las abundancias del neón natural son:
+
+| Número de masa | Masa atómica    | Abundancia |
+| -------------- | --------------- | ---------- |
+| $20$           | $19.9924401754$ | $90,48\%$  |
+| $21$<br>       | $20.99384669$   | $0,27\%$   |
+| $22$           | $21.991385114$  | $9,25\%$   |
+
+La masa atómica del neón natural es el promedio ponderado de las masas atómicas de sus isótopos estables. Esto da como resultado una masa atómica de $20.180\text{u}$.
+
+### Energía en reposo y energía ligante
+
+El concepto de la energía en reposo juega un rol mayor en el comportamiento de los núcleos a diferencia de los átomos. 
+
+En los procesos atómicos son de baja energía y que los constituyentes de un átomo no pueden transformarse en diferentes especies, ya que las masas en reposo y las energías mantienen sus identidades. Es consistente dejarlas fuera del análisis. El mismo argumento no se sostiene para los núcleos debido a la excitación nuclear y la transformación entre energías comparables.
+
+Las contribuciones relativistas constituyen una parte significativa de la energía de los núcleos y no pueden ser despreciadas.
+
+La **energía ligante** es una propiedad de cualquier agregado de partículas unidas por interacciones atractivas. La energía en reposo $Mc^2$ es identificada como la energía relativista total de dicho sistema visto desde su centro de masa, junto con la energía cinética y potencial del sistema.
+
+La energía potencial total debe ser atractiva para mantener el núcleo unido con partículas traídas desde el infinito. La energía de los constituyentes separados en reposo consiste solamente en la suma de las energías en reposo de cada partícula, y esta cantidad debe exceder a $Mc^2$.
+
+
+Podemos de esta forma definir a la **energía ligante**, como la diferencia de energía en reposo de los constituyentes y la energía en reposo del agregado. 
+
+$$ 
+E_b = \sum_i M_ic^2 - Mc^2 
+$$
+
+Para un nucleido $^A_ZX$ podemos escribir entonces su energía de ligadura como:
+
+$$ 
+E_b(^A_ZX) = \left[ Z M(^1H) + NM_n - M(^A_NX) \right] c^2 
+$$
+
+En donde $M(^1H)$ es la masa del átomo de hidrógeno, $M_n$ la masa del neutrón, $M(^A_ZX)$ es la masa del nucleido $^A_ZX$ y $N = A - Z$ es el número de neutrones.
+
+#### Ejemplo
+
+Veamos un ejemplo. Hallemos la energía de ligadura del $^4\text{He}$ y del $^{208}\text{Pb}$ y evaluemos la energía de ligadura por nucleón. Reemplazando los valores:
+
+- $M(^4He) = 4.00260325413 \text{u}$
+- $M(^{208}Pb) = 207.9766521 \text{u}$
+- $M_n = 1.00866491588 \text{u}$
+- $M(^1H) = 1.007276466621 \text{u}$
+- $c = 3 \times 10^8 \text{m/s}$
+
+La energía de ligadura para cada átomo es:
+
+- $E_b(^4He) = 28.3 \text{MeV}$
+- $E_b(^{208}Pb) = 1647.5 \text{MeV}$
+
+Finalmente la energía de ligadura por nucleón, es decir por cada protón o neutrón:
+
+- $E_b(^4He) = 7.1 \text{MeV}$
+- $E_b(^{208}Pb) = 7.9 \text{MeV}$
+
+Esta ultima es una medida de estabilidad de los núcleos.
+
+#### Ejemplo
+
+Hallemos la energía necesaria para separar un neutrón de los nucleidos $^{113}\text{Cd}$ y $^{114}\text{Cd}$. Las masas atómicas de los isótopos de Cadmio son respectivamente:
+
+- $M(^{112}\text{Cd}) = 111.9027639 \text{u}$
+- $M(^{113}\text{Cd}) = 112.90440811 \text{u}$
+- $M(^{114}\text{Cd}) = 113.903365 \text{u}$
+
+La energía de separación de un neutrón, será la diferencia entre la energía del isótopo en reposo $^A_ZX_N$ y la energía de los constituyentes, es decir, la energía del isotopo $^{A-1}_ZX_{N-1}$, y la energía en reposo del neutrón. Esto es:
+
+$$ 
+E_b = \left[ M(^{A-1}_ZX) + M_n - M(^A_ZX) \right] c^2
+$$
+
+Reemplazando en esta formula se puede ver que se necesitan $6.5\text{MeV}$ y $9.01\text{MeV}$ respectivamente para separar un neutrón de los isotopos $^{113}\text{Cd}$ y $^{114}\text{Cd}$ respectivamente. Se necesita casi un $50\%$ más de energía para separar un neutrón del isotopo $^{114}\text{Cd}$, esto nos indica que este ultimo será más estable.
+
+#### Ejemplo
+
+Un método para medir masas atómicas con precisión extremadamente alta se denomina doblete de masas. Este método consiste en calibrar el espectrómetro para un valor próximo a la masa a determinar y medir la diferencia de masa entre moléculas de masas muy similares. Un espectrómetro de masa se calibra para la masa $128 \text{u}$.
+
+Se mide la diferencia $\Delta$ entre las masas moleculares de $\text{C}_9\text{H}_{20}$ y $\text{C}_{10}\text{H}_8$, obteniéndose $\Delta = (0,09390032 \pm 0,00000012) \text{u}$. Despreciando la corrección por la diferencia en energías de ligadura molecular (del orden de $10^{−9} \text{u}$), determinemos la masa atómica de $^1H$ y su incertidumbre.
+
+Se mide la diferencia:
+
+$$ 
+\Delta = M(\text{C}_9\text{H}_{20}) - M(\text{C}_{10}\text{H}_8) = [9M(\text{C}) + 20M(\text{H})] - [10M(\text{C}) + 8M(\text{H})] 
+$$
+
+$$ 
+\Delta = -M(\text{C}) + 12M(\text{H}) 
+$$
+
+Como por definición $M(^{12}\text{C}) = 12 \text{u}$, el cual es el isotopo mas común y con el cual están formadas estas moléculas, tendremos entonces que:
+
+$$
+\Delta = (12,09390032 \pm 0,00000012) \text{u} =  12M(^1\text{H}) \Rightarrow M(^1\text{H}) = \frac{\Delta}{12}
+$$
+
+La masa del hidrógeno atómico y su incertidumbre será de $M(^1\text{H}) = (1.0078250267 \pm 0,00000001)$.
+
+
+### La fórmula semi-empírica
+
+Existe un modelo matemático en física nuclear que estima la energía de enlace y la masa de un núcleo atómico en función del número de protones y neutrones. Esta se denomina formula semi-empírica de Weizsäcker. Se considera cinco términos:
+
+- El término de volumen, que es proporcional al número cuántico $A$. Representa la contribución de la fuerza nuclear atractiva, que es proporcional al número total de nucleones.
+- El término de superficie, que es proporcional a $A^{2/3}$. Compensa la menor cohesión de los nucleones en la superficie del núcleo. 
+- El término de Coulomb, que es proporcional a $Z(Z-1)/A^{1/3}$. Describe la repulsión entre protones dentro del núcleo. 
+- El término de asimetría, que es proporcional a $\frac{(A/2-z)^2}{A}$. Explica que los núcleos con un número desbalanceado de protones y neutrones son menos estables.
+- Un ultimo termino que introduce una corrección adicional para la estabilidad según si el número de protones y neutrones es par o impar.
+
+$$ \epsilon_5 = \begin{cases} \pm \frac{a_5}{A^{3/4}} \qquad  A, N \quad\text{ambos pares o impares.}\\
+0 \qquad A, N \quad \text{distinta paridad.} \end{cases}$$
+
+La energía de enlace del agregado de estos términos es:
+
+$$ 
+E_b(^A_ZX) = a_1A - a_2A^{2/3} - a_3\frac{Z(Z-1)}{A^{1/3}} - a_4\frac{(A/2-Z)^2}{A} - \epsilon_5
+$$
+
+Se puede predecir la masa de un núcleo atómico utilizando esta formula.
+
+$$ 
+M(Z,A) = ZM(^1H) + (A-Z)M_n - \left[ a_1 A - a_2 A^{2/3} - a_3 \frac{Z^2}{A^{1/3}} - a_4 \frac{(A/2 - Z)^2}{A} + \epsilon_5  \right] \frac{1}{c^2}
+$$
+
+En donde la adición de un término de paridad $\epsilon_5$ es necesaria para ajustar la fórmula a los datos experimentales. Los valores de los coeficientes $a_i$ son obtenidos ajustando la fórmula a los datos experimentales. Un ajuste típico de los coeficientes es:
+
+$$ 
+a_1 = 15.76 \text{MeV}, \quad a_2 = 17.81 \text{MeV}, \quad a_3 = 0.7105 \text{MeV}, \quad a_4 = 98.80 \text{MeV} \quad a_5 = 39 \text{MeV} 
+$$
+
+Si se deriva la fórmula, con respecto a $Z$, obtenemos la tasa de cambio de la masa con respecto al número atómico dado un número másico $A$ fijo. Por lo que es posible hallar un mínimo igualando la derivada a 0.
+
+$$ 
+\frac{\partial M(Z, A)}{\partial Z} = M(^1H) - M_n - \left[ - a_3\frac{2 Z}{A^{1/3}} + a_4\frac{2 (A/2 - Z)}{A} \right] \frac{1}{c^2} = 0
+$$
+
+$$ 
+c^2( M(^1H) - M_n ) = \left[ - a_3\frac{2 Z}{A^{1/3}} + a_4 - a_4\frac{2Z}{A} \right] 
+$$
+
+$$ 
+\Rightarrow Z = \frac{A}{2} \frac{a_4 - c^2( M(^1H) - M_n )}{ a_3 A^{2/3} + a_4 } 
+$$
+
+Podemos hallar una región de estabilidad de esta forma, ya que los isobaros en el mínimo corresponderán a aquellos estables. 

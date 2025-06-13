@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3b87249d20c402e3",
+        "id": "aa399725abc99f59",
         "type": "tabs",
         "children": [
           {
-            "id": "47a639b812f08873",
+            "id": "b0136f728c112759",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Física de Partículas/Dispersión Electrón-Muón.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Dispersión Electrón-Muón"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -78,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 311.5
   },
   "right": {
     "id": "ba073ec4186818f9",
@@ -168,26 +164,30 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "47a639b812f08873",
+  "active": "b0136f728c112759",
   "lastOpenFiles": [
+    "Física Núclear/Estructura nuclear.md",
+    "Física Núclear/Desintegración beta.md",
+    "Física Núclear/Desintegración alfa.md",
+    "assets/20250613175622.png",
+    "assets/20250613165943.png",
+    "assets/20250613165718.png",
+    "assets/Pasted image 20250613165805.png",
+    "Física de Partículas/Dispersión Electrón-Muón.md",
+    "Física Núclear",
     "Física Molecular/La molécula de hidrogeno.md",
-    "Física Molecular/Orbitales moleculares.md",
     "Física Molecular/Interacción de Van Der Wals.md",
     "Física Molecular/Espectros rotacionales y vibracionales.md",
     "Física Molecular/El enlace iónico.md",
+    "Física Molecular/Orbitales moleculares.md",
     "assets/20250613143054.png",
     "Sin título.md",
     "Sin título 1.md",
-    "Física de Partículas/Dispersión Electrón-Muón.md",
     "assets/20250323001410.png",
     "assets/20250319023517.png",
     "assets/20250319022810.png",
     "assets/20250319014927.png",
     "assets/20250318060913.png",
-    "assets/20250312235634.png",
-    "assets/20250312235014.png",
-    "assets/20250312234852.png",
-    "assets/20250312234632.png",
     "La molecula de hidrogeno.md",
     "Física Molecular",
     "trash/Dispersión Electrón-Electrón..md",
