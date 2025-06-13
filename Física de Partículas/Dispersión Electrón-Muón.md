@@ -1,0 +1,257 @@
+El muón es una partícula elemental masiva similar al electrón, con la misma carga eléctrica de $-e$  y un espín de $1/2$, pero con una masa mucho mayor, unas $206.7682830(46)$ veces la del electrón.  Se clasifica como leptón y al igual que otros leptones, está no esta compuesto por ninguna partícula más simple. 
+
+Sean $m$ la masa del electrón y $M$ la masa del muón.  Consideremos el experimento de dispersión de Mott ($m << M$):
+
+$$ 
+e^- + \mu^- \rightarrow e^- + \mu^-
+$$
+
+Denotamos $p_1$ y $p_3$ a los $4$-momentos inicial y final del electrón y $p_2$ y $p_4$ a los $4$-momentos inicial y final el muón. Considerando el marco de referencia en el muón e ignorando el impulso de este, podemos escribir:
+
+$$
+p_1 = (\frac{E_1}{c}, \vec{p}_1) \qquad p_2 = (Mc, 0) \qquad p_3 = (\frac{E_1}{c}, \vec{p}_3) \qquad p_4 = (Mc, 0)
+$$
+
+Hallamos ahora el factor de flujo. Para ello partimos del producto de los momentos iniciales y manipulamos la expresión para hallar el factor de flujo $F$:
+
+$$
+p_1 \cdot p_2 = \frac{E_1}{c} Mc = \sqrt{|\vec{p}_1|^2 + (mc)^2} Mc
+$$
+
+$$
+(p_1 \cdot p_2)^2 = |\vec{p}_1|^2 M^2 c^2 + m^2 M^2 c^4
+$$
+
+$$
+(p_1 \cdot p_2)^2 - (mMc^2)^2 = |\vec{p}_1|^2 M^2 c^2
+$$
+
+$$
+F = 4\sqrt{(p_1 \cdot p_2)^2 - (mMc^2)^2} = 4M c  |\vec{p}_1|
+$$
+
+La sección transversal del proceso estará dada por:
+
+$$
+\begin{aligned}
+\sigma = \frac{\hbar^2S}{F} \int |\mathcal{M}|^2 (2\pi)^4 \delta^4(p_1+p_2-p_3-p_4) 
+\\
+(2\pi) \big[ \delta(p_3^2 - m^2c^2) \theta(p_3^0) \big]
+(2\pi) \big[ \delta(p_4^2 - M^2c^2) \theta(p_4^0) \big] \frac{d^4 p_3}{(2\pi)^4} \frac{d^4 p_4}{(2\pi)^4}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\sigma = \frac{\hbar^2}{4M c  |\vec{p}_1|} \frac{1}{(2\pi)^2}
+\int |\mathcal{M}|^2 \delta(p^0_1+p^0_2-p^0_3-p^0_4) \delta^3(\vec{p}_1 - \vec{p}_3) 
+\\
+\frac{\delta(p^0_3 - \sqrt{|\vec{p}_3|^2 + m^2c^2})}{2\sqrt{|\vec{p}_3|^2 + m^2c^2}} 
+\frac{\delta(p^0_4 - Mc)}{2Mc} dp^0_3 d^3\vec{p}_3
+\end{aligned}
+$$
+
+$$
+\sigma = \left(\frac{\hbar}{8\pi}\right)^2 \frac{1}{Mc |\vec{p}_1|}
+\int |\mathcal{M}|^2 \frac{\delta(E_1/c - \sqrt{|\vec{p}_3| + (mc)^2})}{\sqrt{|\vec{p}_3|^2 + m^2c^2} Mc} \delta^3(\vec{p}_1 - \vec{p}_3) d^3 \vec{p}_3
+$$
+
+Nos interesa la sección transversal diferencia $d\sigma / d\Omega$. Derivando ambos miembros:
+
+$$
+\frac{d \sigma}{d\Omega} = \left(\frac{\hbar}{8\pi} \frac{|\mathcal{M}|}{Mc} \right)^2  \frac{1}{ |\vec{p}_1| }
+\int
+\frac{\delta(E_1/c - \sqrt{p^2 + m^2c^2})}{\sqrt{p^2 + m^2c^2}} p^2 \delta(|\vec{p}_1| - p)dp
+$$
+
+Reemplazamos ahora:
+
+$$
+u \equiv \sqrt{p^2 + m^2c^2} \Rightarrow \frac{du}{dp} = \frac{p}{\sqrt{p^2+ m^2c^2}} = \frac{p}{u} \Rightarrow pudu = p^2dp
+$$
+
+$$
+\frac{d \sigma}{d\Omega} = \left(\frac{\hbar}{8\pi} \frac{|\mathcal{M}|}{Mc} \right)^2 \frac{1}{ |\vec{p}_1| }
+\int
+\frac{\delta(E_1/c - u)}{u} |\vec{p}_1| u du 
+$$
+
+En donde el modulo del $4$-momento $p_1$ se cancela y la integral de la delta es simplemente uno. Finalmente la sección transversal diferencial para la dispersión de Mott electrón-muón será simplemente: 
+
+$$
+\frac{d \sigma}{d\Omega} = \left(\frac{\hbar}{8\pi} \frac{|\mathcal{M}|}{Mc} \right)^2 
+$$
+
+Hallemos ahora la amplitud $\mathcal{M}$ usando el ritual de Feynman. Notemos que para  el proceso $e^- + \mu^- \rightarrow e^- + \mu^-$ hay un solo diagrama de Feynman de orden dos:
+
+![](assets/20250612221751.png)
+
+Asociamos al diagrama:
+- $4$-momentos $p_1$, $p_2$, $p_3$ y $p_4$ a las líneas externas y $q$ a la línea interna. 
+	
+- Espinores $u^{(s_1)}$,  $\bar{u}^{(s_2)}$, $u^{(s_3)}$ y $\bar{u}^{(s_4)}$.
+	
+- Constantes de acople $ig_e \gamma^{\mu}$ y $ig_e \gamma^{\nu}$ en donde $g_e$ es la constante de acoplamiento $g_e = \sqrt{4\pi \alpha}$.
+	
+- El propagador correspondiente a un fotón $-ig_{\mu\nu}/ q^2$
+	
+- Términos asociados a la conservación del momento y energía $(2\pi)^4\delta^4(p_1 - q - p_3)$ y $(2\pi)^4\delta^4(p_2 + q - p_4)$.
+
+Integramos hacia atrás partiendo del electrón que emerge:
+
+$$
+\begin{aligned}
+i(2\pi)^4 \delta^4(p_1+p_2-p_3-p_4) \mathcal{M} 
+= 
+\int \big[\bar{u}^{(s_3)}(p_3) (ig_e\gamma^{\mu}) u^{(s_1)}(p_1)\big] (2\pi)^4\delta^4(p_1 - q - p_3)
+\\
+(-\frac{ig_{\mu\nu}}{q^2}) (2\pi)^4\delta^4(p_2 + q - p_4) 
+\big[ \bar{u}^{(s_4)}(p_4) (ig_e\gamma^{\nu}) u^{(s_2)}(p_2) \big]
+\end{aligned}
+$$
+
+Finalmente se cancelan las deltas y la unidad imaginaria, luego la amplitud del proceso será:
+
+$$
+\mathcal{M} = -\frac{g_e^2}{(p_1 - p_3)^2}\big[\bar{u}^{(s_3)}(p_3) \gamma^{\mu} u^{(s_1)}(p_1)\big] \big[\bar{u}^{(s_4)}(p_4) \gamma_{\mu} u^{(s_2)}(p_2)\big] 
+$$
+
+$$
+\equiv -\frac{g_e^2}{(p_1 - p_3)^2} \big[\bar{u}(3) \gamma^{\mu} u(1)\big] \big[\bar{u}(4) \gamma_{\mu} u(2) \big] 
+$$
+
+Podemos hallar el valor esperado de la amplitud cuadrada usando el truco de Casimir. Sean $G_1$ y $G_2$ tales que:
+
+$$
+G_1 \equiv \big[\bar{u}(3) \gamma^{\mu} u(1) \big] ^2
+\qquad
+G_2 \equiv \big[\bar{u}(4) \gamma_{\mu} u(2)\big] ^2
+$$
+
+Notemos que
+
+$$ 
+\begin{aligned}
+\big[ \bar{u}(3) \gamma^{\nu} u(1) \big]^{*} 
+= 
+\big[ u(3)^{\dagger} \gamma^0 \gamma^{\nu} u(1) \big]^{\dagger}
+=
+u(1)^{\dagger} (\gamma^0 \gamma^0 \gamma^{\nu \dagger} \gamma^{0\dagger}) u(3)
+= 
+\big[ \bar{u}(1) \bar{\gamma}^{\nu} u(3) \big] 
+\end{aligned}
+$$
+
+En donde para $\nu = 1, 2, 3$ se tiene que:
+
+$$
+\bar{\gamma}^{\nu} = \gamma^0 \gamma^{\nu \dagger} \gamma^{0\dagger} = \begin{pmatrix} \mathbb{I} & 0 \\ 0 & - \mathbb{I} \end{pmatrix} 
+\begin{pmatrix} 0 & -\sigma^{*\nu} \\ \sigma^{*\nu} & 0 \end{pmatrix}
+\begin{pmatrix} \mathbb{I} & 0 \\ 0 & - \mathbb{I} \end{pmatrix} = \gamma^{\nu}
+$$
+
+Luego para $G_1$:
+
+$$
+G_1 
+= 
+\big[ \bar{u}(3) \gamma^{\mu} u(1) \big] 
+\big[ \bar{u}(1) \gamma^{\nu} u(3) \big] 
+$$
+
+$$
+\sum_{s_1} G_1 =  \bar{u}(3) \gamma^{\mu} \left( \sum_{s_1} u^{(s_1)}(p_1) \bar{u}^{(s_1)}(p_1) \right) \gamma^{\nu} u(3)
+=  \bar{u}(3) \gamma^{\mu} ( \cancel{p_1} + mc) \gamma^{\nu} u(3)
+$$
+
+$$
+\langle G_1\rangle =  \frac{1}{2}\sum_{s_3}\sum_{s_1} G_1 =  \frac{1}{2}\sum_{s_3} 
+\bar{u}^{(s_3)}(p_3) \gamma^{\mu} ( \cancel{p_1} + mc) \gamma^{\nu} u^{(s_3)}(p_3) 
+=  \frac{1}{2} \text{Tr}[\gamma^{\mu} ( \cancel{p_1} + mc) \gamma^{\nu} (\cancel{p_3} + mc)]
+$$
+
+$$
+=  \frac{1}{2} (p_{1\sigma})( p_{3\lambda})\text{Tr}[\gamma^{\mu} \gamma^{\sigma} \gamma^{\nu} \gamma^{\lambda}] +  \frac{1}{2} (mc)^2 \text{Tr}[\gamma^{\mu} \gamma^{\nu}]
+$$
+
+$$
+= 2(p_{1\sigma})( p_{3\lambda})(g^{\mu \sigma} g^{\nu \lambda} - g^{\mu \nu}  g^{\sigma \lambda} + g^{\mu \lambda} g^{\sigma \lambda}) + 2(mc)^2 g^{\mu \nu}
+$$
+
+$$
+= 2 \big[p_1^{\mu} p_3^{\nu} + p_3^{\mu} p_1^{\nu} + ((mc)^2 - (p_1 \cdot p_3))g^{\mu \nu} \big]
+$$
+
+De la misma forma para $G_2$ tenemos que:
+
+$$
+\langle G_2\rangle =  \frac{1}{2}\sum_{s_3} \sum_{s_1} G_2 =  \frac{1}{2}\text{Tr}[\gamma_{\mu}  ( \cancel{p_2} + Mc) \gamma_{\nu} (\cancel{p_4} + Mc)]
+$$
+
+$$
+=  \frac{1}{2} (p_{2\sigma})(p_{4\lambda}) \text{Tr}[\gamma_{\mu} \gamma^{\sigma} \gamma_{\nu} \gamma^{\lambda}] +  \frac{1}{2} (Mc)^2 \text{Tr}[\gamma_{\mu} \gamma_{\nu}]
+$$
+
+$$
+= 2(p_{2\sigma})(p_{4\lambda})(g_{\mu}{}^{\sigma} g_{\nu}{}^{\lambda} - g_{\mu \nu} g^{\lambda \sigma} + g_{\mu}{}^{\lambda} g_{\nu}{}^{\sigma}) + 2 (Mc)^2 g_{\mu \nu} 
+$$
+
+$$
+= 2 \big[p_{2\mu} p_{4\nu} + p_{4\mu} p_{2\nu} + ((Mc)^2 - (p_2 \cdot p_4))g_{\mu \nu} \big] 
+$$
+
+Multiplicando $\langle G_1\rangle$ y $\langle G_2\rangle$ obtenemos:
+
+$$
+\langle G_1  G_2\rangle = 4 \big[p_1^{\mu} p_3^{\nu} + p_3^{\mu} p_1^{\nu} + ((mc)^2 - (p_1 \cdot p_3))g^{\mu \nu} \big] \big[p_{2\mu} p_{4\nu} + p_{4\mu} p_{2\nu} + ((Mc)^2 - (p_2 \cdot p_4))g_{\mu \nu} \big] 
+$$
+
+$$
+\begin{aligned}
+= 4[2 (p_1\cdot p_2)(p_3 \cdot p_4) +  2(p_2\cdot p_3)(p_4 \cdot p_1) \\
++ 4((mc)^2 - (p_1 \cdot p_3))((Mc)^2 - (p_2 \cdot p_4))\\
++ 2 (p_1 \cdot p_3) ((Mc)^2 - (p_2 \cdot p_4)) \\
++ 2 (p_2 \cdot p_4) ((mc)^2 - (p_1 \cdot p_3))
+] 
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+= 4 [ 2 (p_1\cdot p_2)(p_3 \cdot p_4) +  2(p_2\cdot p_3)(p_4 \cdot p_1) \\
+4 (m M c^2)^2 - 4(Mc)^2(p_1 \cdot p_3) - 4(mc)^2(p_2 \cdot p_4) + 4(p_1 \cdot p_3)(p_2 \cdot p_4)\\ 
++ 2(p_1 \cdot p_3) (Mc)^2 - 2(p_1 \cdot p_3)(p_2\cdot p_4) \\
++ 2(p_2 \cdot p_4) ((mc)^2 - 2(p_2 \cdot p_4)(p_1 \cdot p_3))
+]
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+= 8 [ (p_1\cdot p_2)(p_3 \cdot p_4) +  (p_2\cdot p_3)(p_4 \cdot p_1) \\
+2(m M c^2)^2 - (Mc)^2(p_1 \cdot p_3) - (mc)^2(p_2 \cdot p_4)(p_2 \cdot p_4)]
+\end{aligned}
+$$
+
+Reemplazando podemos hallar el valor esperado del modulo cuadrado de la amplitud como:
+
+$$
+\begin{aligned}
+\langle |\mathcal{M}|^2 \rangle = \frac{8 g_e^4}{(p_1 - p_3)^4} \big[ (p_1\cdot p_2)(p_3 \cdot p_4) +  (p_2\cdot p_3)(p_4 \cdot p_1) \\
+- (Mc)^2(p_1 \cdot p_3) - (mc)^2(p_2 \cdot p_4) + 2(m M c^2)^2 \big]
+\end{aligned}
+$$
+
+Finalmente podemos reemplazar en la sección transversal diferencial.
+ 
+$$
+\begin{aligned}
+\frac{d \sigma}{ d \Omega} = \left(\frac{\hbar}{2 \pi Mc} \right)^2 \frac{g_e^4}{(p_1 - p_3)^4} 
+\big[ (p_1\cdot p_2)(p_3 \cdot p_4) + (p_2\cdot p_3)(p_4 \cdot p_1)
+\\
+- (Mc)^2(p_1 \cdot p_3) - (mc)^2(p_2 \cdot p_4) + 2(m M c^2)^2
+\big]
+\end{aligned}
+$$
+
+--- 
