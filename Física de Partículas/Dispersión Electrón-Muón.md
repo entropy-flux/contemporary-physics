@@ -89,7 +89,7 @@ Hallemos ahora la amplitud $\mathcal{M}$ usando el ritual de Feynman. Notemos qu
 Asociamos al diagrama:
 - $4$-momentos $p_1$, $p_2$, $p_3$ y $p_4$ a las líneas externas y $q$ a la línea interna. 
 	
-- Espinores $u^{(s_1)}$,  $\bar{u}^{(s_2)}$, $u^{(s_3)}$ y $\bar{u}^{(s_4)}$.
+- Espinores $u^{(s_1)}$,  $u^{(s_2)}$, $\bar{u}^{(s_3)}$ y $\bar{u}^{(s_4)}$.
 	
 - Constantes de acople $ig_e \gamma^{\mu}$ y $ig_e \gamma^{\nu}$ en donde $g_e$ es la constante de acoplamiento $g_e = \sqrt{4\pi \alpha}$.
 	
