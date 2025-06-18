@@ -11,10 +11,14 @@
             "id": "4219e83d7413ee05",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "README"
             }
           }
         ]
@@ -164,11 +168,11 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "4219e83d7413ee05",
+  "active": "0424d846b41d7db6",
   "lastOpenFiles": [
     "Física de Partículas/Aniquilación Electrón-Positrón.md",
     "Física Núclear/Procesos nucleares.md",
-    "README.md.md",
+    "README.md",
     "Física de Partículas/Dispersión Electrón-Muón.md",
     "Física de Partículas/Simetrias.md",
     "Sin título 1.md",
