@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "bdfe8ff1ff8d7496",
+        "id": "3ea7b9ae6748db6a",
         "type": "tabs",
         "children": [
           {
-            "id": "bb0e7c1f409ec76a",
+            "id": "4219e83d7413ee05",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Física de Partículas/Aniquilación Electrón-Positrón.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Aniquilación Electrón-Positrón"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -168,16 +164,19 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "bb0e7c1f409ec76a",
+  "active": "4219e83d7413ee05",
   "lastOpenFiles": [
+    "Física de Partículas/Aniquilación Electrón-Positrón.md",
+    "Física Núclear/Procesos nucleares.md",
+    "README.md.md",
     "Física de Partículas/Dispersión Electrón-Muón.md",
-    "Sin título.md",
+    "Física de Partículas/Simetrias.md",
+    "Sin título 1.md",
     "Física Molecular/El enlace iónico.md",
     "Física Molecular/Espectros rotacionales y vibracionales.md",
     "Física Molecular/Interacción de Van Der Wals.md",
     "Física Molecular/La molécula de hidrogeno.md",
     "Física Molecular/Orbitales moleculares.md",
-    "Física de Partículas/Aniquilación Electrón-Positrón.md",
     "assets/20250616184552.png",
     "Física Núclear/Estructura nuclear.md",
     "Física Núclear/Desintegración beta.md",
@@ -188,7 +187,6 @@
     "assets/Pasted image 20250613165805.png",
     "Física Núclear",
     "assets/20250613143054.png",
-    "Sin título 1.md",
     "assets/20250323001410.png",
     "assets/20250319023517.png",
     "assets/20250319022810.png",
