@@ -15,7 +15,7 @@ $$
 
 En la siguiente figura se puede observar un esquema del potencial expresado en el hamiltoniano anterior. A medida la separación inter-nuclear disminuye, la forma del potencial difiere cada vez mas a la del potencial resultante de considerar los núcleos por separado.  
 
-![Potencial de molecula](assets/20250312234632.png)
+![Potencial de molecula](../assets/20250312234632.png)
 
 Sea $\psi$ un auto-estado de este hamiltoniano. Debido a la simetría del problema, se espera que la probabilidad de encontrar a un electrón en proximidad al núcleo centrado en $\vec{R}/2$, sea la misma que encontrarlo en $-\vec{R}/2$, por lo que:
 

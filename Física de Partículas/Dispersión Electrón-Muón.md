@@ -84,7 +84,7 @@ $$
 
 Hallemos ahora la amplitud $\mathcal{M}$ usando el ritual de Feynman. Notemos que para  el proceso $e^- + \mu^- \rightarrow e^- + \mu^-$ hay un solo diagrama de Feynman de orden dos:
 
-![](assets/20250612221751.png)
+![](../assets/20250612221751.png)
 
 Asociamos al diagrama:
 - $4$-momentos $p_1$, $p_2$, $p_3$ y $p_4$ a las líneas externas y $q$ a la línea interna. 

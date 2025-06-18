@@ -383,9 +383,7 @@ Luego
 $$
 \begin{aligned}
 \text{Tr}[\cancel{\epsilon_3}  \cancel{\epsilon_4}\cancel{\epsilon_3^*} \cancel{\epsilon_4^*}] = \epsilon_{3\mu} \epsilon_{4\nu}  \epsilon^*_{3\lambda} \epsilon^*_{4\sigma} 4(g^{\mu \nu}g^{\lambda \sigma} - g^{\mu \lambda}g^{\nu \sigma} + g^{\mu \sigma}g^{\nu \lambda}) \\ \\
-
 = 4(\epsilon_3\cdot \epsilon_4)(\epsilon^*_3\cdot \epsilon^*_4) - 4(\epsilon_3\cdot \epsilon^*_3)(\epsilon_4\cdot \epsilon^*_4) + 4(\epsilon_3\cdot \epsilon^*_4) (\epsilon^*_3\cdot \epsilon_4) \\ \\
-
 = 16(\epsilon_3\cdot \epsilon_4)^2 - 8\\
 \end{aligned}
 $$
