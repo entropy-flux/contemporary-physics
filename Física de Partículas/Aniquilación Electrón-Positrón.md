@@ -409,6 +409,7 @@ Desarrollando los últimos términos dentro de la traza:
 $$
 (\cancel{p_3} + \cancel{p_4}) \cancel{\epsilon_3^*} \cancel{\epsilon_4^*} = - \cancel{\epsilon^*_3} \cancel{p_3} \cancel{\epsilon^*_4} + \cancel{p_4} \cancel{\epsilon^*_3} \cancel{\epsilon^*_4} = - \cancel{\epsilon^*_3} \cancel{p_3} \cancel{\epsilon^*_4} + 2(p_4 \cdot \epsilon^*_3) \cancel{\epsilon^*_4} - \cancel{\epsilon^*_3} \cancel{p_4} \cancel{\epsilon^*_4}
 $$
+
 La traza será:
 
 $$
