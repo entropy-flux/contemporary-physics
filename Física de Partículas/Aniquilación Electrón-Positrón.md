@@ -104,17 +104,15 @@ $$
 = \cancel{\epsilon_3^*} \cancel{p_3} u(1) 
 $$
 
-Escribimos entonces $\mathcal{M}_1$ y análogamente $\mathcal{M}_2$ como:
+Donde usamos que $(\cancel{p}_1 - mc) u(1) = 0$, pues $u(1)$ es una espinor de solución de la ecuación de Dirac. Por tanto, podemos reescribir las amplitud $\mathcal{M}_1$ y $\mathcal{M}_2$ como:
 
 $$
 \mathcal{M}_1 = \frac{g_e^2}{2(p_1\cdot p_3)} \bar{v}(2)  \cancel{\epsilon_4^*}  \cancel{\epsilon_3^*} \cancel{p_3} u(1) 
-$$
-
-$$
+\qquad
 \mathcal{M}_2 = \frac{g_e^2}{2(p_1\cdot p_4)} \bar{v}(2)  \cancel{\epsilon_3^*}  \cancel{\epsilon_4^*} \cancel{p_4} u(1) 
 $$
 
-Finalmente la amplitud del proceso se puede escribir como:
+La amplitud total es simplemente la suma de ambas contribuciones:
 
 $$
 \mathcal{M} = \mathcal{M}_1 + \mathcal{M}_2 = \frac{g_e^2}{2}  \bar{v}(2)  
@@ -130,8 +128,8 @@ Nos interesa sin embargo el valor esperado del modulo cuadrado de la amplitud. E
 $$
 |\mathcal{M}|^2 = \mathcal{M}_1 \mathcal{M}_1^* + \mathcal{M}_1 \mathcal{M}_2^* + \mathcal{M}_2 \mathcal{M}_1^* + \mathcal{M}_2 \mathcal{M}^*_2
 $$
-
-En donde:
+ 
+En donde el conjugado $\mathcal{M}_1^*$ puede expresarse como: 
 
 $$
 \begin{aligned}
@@ -146,8 +144,8 @@ $$
 \end{aligned}
 $$
 
-Análogamente:
-
+En donde $\Gamma = \cancel{\epsilon_4^*}  \cancel{\epsilon_3^*} \cancel{p_3}$ y $\bar{\Gamma} = \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4}$. Por otra parte el conjugado $\mathcal{M}_2^*$ puede expresarse de la misma forma:
+ 
 $$
 \begin{aligned}
 \mathcal{M}_2^* = \frac{g_e^2}{2(p_1\cdot p_4)} 
@@ -159,37 +157,372 @@ $$
 \end{aligned}
 $$
 
-Luego:
+Promediando sobre espines iniciales usando el truco de Casimir obtenemos las siguiente expresiones para los términos de $\mathcal{M}$:
 
 $$
-\langle \mathcal{M_1} \mathcal{M}_1^* \rangle = ...\text{Tr}[\Gamma_1(\cancel{p_1} + mc) \bar{\Gamma}_1 (\cancel{p_2} - mc)]
-$$
-
-$$
-\langle \mathcal{M_1} \mathcal{M}_2^* \rangle =... \text{Tr}[\Gamma_1(\cancel{p_1} + mc) \bar{\Gamma}_2 (\cancel{p_2} - mc)]
-$$
-
-$$
-\langle \mathcal{M_2} \mathcal{M}_1^* \rangle =... \text{Tr}[\Gamma_2(\cancel{p_1} + mc) \bar{\Gamma}_1 (\cancel{p_2} - mc)]
-$$
-
-$$
+\begin{aligned}
+\langle \mathcal{M_1} \mathcal{M}_1^* \rangle = ...\text{Tr}[\Gamma_1(\cancel{p_1} + mc) \bar{\Gamma}_1 (\cancel{p_2} - mc)] \\
+\\
+\langle \mathcal{M_2} \mathcal{M}_1^* \rangle =... \text{Tr}[\Gamma_2(\cancel{p_1} + mc) \bar{\Gamma}_1 (\cancel{p_2} - mc)] \\
+\\
+\langle \mathcal{M_1} \mathcal{M}_2^* \rangle =... \text{Tr}[\Gamma_1(\cancel{p_1} + mc) \bar{\Gamma}_2 (\cancel{p_2} - mc)] \\ 
+\\
 \langle \mathcal{M_2} \mathcal{M}_2^* \rangle =... \text{Tr}[\Gamma_2(\cancel{p_1} + mc) \bar{\Gamma}_2 (\cancel{p_2} - mc)]
+\end{aligned}
 $$
 
 Reemplazando:
 
 $$
 \begin{aligned}
-\langle|\mathcal{M}|^2\rangle = \frac{g_e^4}{4(p_1\cdot p_3)^2} \text{Tr}[\cancel{\epsilon_4^*} \cancel{\epsilon_3^*} \cancel{p}_3 (\cancel{p}_1+ mc)  \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} (\cancel{p_2} - mc)] \\
-
-\frac{g_e^4}{4(p_1\cdot p_3)(p_1\cdot p_4)} \text{Tr}[\cancel{\epsilon_4^*} \cancel{\epsilon_3^*} \cancel{p}_3 (\cancel{p}_1+ mc)  \cancel{p_4} \cancel{\epsilon_4}  \cancel{\epsilon_3} (\cancel{p_2} - mc)] \\
-
-\frac{g_e^4}{4(p_1\cdot p_4)(p_1\cdot p_3)} \text{Tr}[\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} \cancel{p}_4 (\cancel{p}_1+ mc)  \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} (\cancel{p_2} - mc)] \\
-
-\frac{g_e^4}{4(p_1\cdot p_4)^2} \text{Tr}[\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} \cancel{p}_4 (\cancel{p}_1+ mc)  \cancel{p_4} \cancel{\epsilon_4}  \cancel{\epsilon_3} (\cancel{p_2} - mc)] \\
-
+\langle|\mathcal{M}|^2\rangle = \frac{g_e^4}{4(p_1\cdot p_3)^2} \text{Tr}[\cancel{\epsilon_4^*} \cancel{\epsilon_3^*} \cancel{p}_3 (\cancel{p_1}+ mc)  \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} (\cancel{p_2} - mc)] \\
+\\
+\frac{g_e^4}{4(p_1\cdot p_4)(p_1\cdot p_3)} \text{Tr}[\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} \cancel{p_4} (\cancel{p_1}+ mc)  \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} (\cancel{p_2} - mc)] \\
+\\
+\frac{g_e^4}{4(p_1\cdot p_3)(p_1\cdot p_4)} \text{Tr}[\cancel{\epsilon_4^*} \cancel{\epsilon_3^*} \cancel{p_3} (\cancel{p_1}+ mc)  \cancel{p_4} \cancel{\epsilon_4}  \cancel{\epsilon_3} (\cancel{p_2} - mc)] \\ 
+\\
+\frac{g_e^4}{4(p_1\cdot p_4)^2} \text{Tr}[\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} \cancel{p_4} (\cancel{p_1}+ mc)  \cancel{p_4} \cancel{\epsilon_4}  \cancel{\epsilon_3} (\cancel{p_2} - mc)] \\
 \end{aligned} 
 $$
 
+Esta expresión puede simplificarse aun mas usando algebras de Clifford. Hallemos la primera de las trazas.
 
+$$
+\begin{aligned}
+T \equiv \text{Tr}[\cancel{\epsilon_4^*} \cancel{\epsilon_3^*} 
+\cancel{p_3} (\cancel{p}_1+ mc)  \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} (\cancel{p_2} - mc)] \\ 
+\\
+= \text{Tr}[\cancel{\epsilon_4^*} \cancel{\epsilon_3^*} 
+\cancel{p_3} \cancel{p_1}   \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} \cancel{p_2}] - (mc)^2 \text{Tr}[\cancel{\epsilon_4^*} \cancel{\epsilon_3^*} 
+\cancel{p_3} \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} ] \\ 
+\end{aligned}
+$$
+
+Donde se uso que la traza de un numero impar de matrices es cero. Notemos que el momento $p_3$ corresponde a un fotón, por lo que $(p_3 \cdot p_3) = 0$. Teniendo en cuenta esto veamos que:
+
+$$
+\cancel{p_3}\cancel{p_3} = \gamma^{\mu} \gamma^{\nu} p_{3\mu} p_{3\nu} = 2(p_3\cdot p_3) - \cancel{p_3}\cancel{p_3} = - \cancel{p_3}\cancel{p_3} =0
+$$
+
+Luego el segundo termino de la traza se anula. Podemos usar esta idea para simplificar el primer termino. Notemos que:
+
+$$
+\cancel{p_1}\cancel{p_3} = 2(p_1\cdot p_3) - \cancel{p_3} \cancel{p_1}
+$$
+
+Luego el termino restante se puede separar en dos sumas, una de las cuales vuelve a tener un termino $\cancel{p_3}\cancel{p_3}$ que la vuelve nula. Esto es:
+
+$$
+\begin{aligned}
+\Rightarrow T = 2(p_1\cdot p_3) \text{Tr}[\cancel{\epsilon_4^*} \cancel{\epsilon_3^*} 
+\cancel{p_3}\cancel{\epsilon_3}  \cancel{\epsilon_4} \cancel{p_2}] - \text{Tr}[\cancel{\epsilon_4^*} \cancel{\epsilon_3^*} 
+\cancel{p_3}  \cancel{p_3} \cancel{p_1} \cancel{\epsilon_3}  \cancel{\epsilon_4} \cancel{p_2}]
+\\
+= 2(p_1\cdot p_3) \text{Tr}[\cancel{\epsilon_4^*} \cancel{\epsilon_3^*} 
+\cancel{p_3}\cancel{\epsilon_3}  \cancel{\epsilon_4} \cancel{p_2}] 
+\end{aligned}
+$$
+
+Ahora, utilizando la transversalidad de la polarización ($p_3 \cdot \epsilon_3 = 0$), obtenemos las expresiones:
+
+$$ 
+\cancel{\epsilon_3} \cancel{p_3} = 2(\epsilon_3 \cdot p_3) - \cancel{p_3} \cancel{\epsilon_3} = - \cancel{p_3}  \cancel{\epsilon_3}
+$$
+
+$$
+\cancel{\epsilon^*_3} \cancel{\epsilon_3} = \gamma^{\mu} \gamma^{\nu} \epsilon^*_{3\mu} \epsilon_{3\nu} = \frac{1}{2} (\gamma^{\mu} \gamma^{\nu}  + \gamma^{\nu} \gamma^{\mu}) \epsilon^*_{3\mu} \epsilon_{3\nu} = g^{\mu\nu }\epsilon^*_{3\mu} \epsilon_{3\nu} = -1
+$$
+
+Reemplazando:
+
+$$
+T = 2(p_1\cdot p_3) \text{Tr}[\cancel{\epsilon_4^*}
+\cancel{p_3} \cancel{\epsilon_4} \cancel{p_2}] 
+$$
+
+Desarrollando los términos $\cancel{p_3} \cancel{\epsilon_4}$ de la misma forma, la traza se puede expresar como:
+
+$$
+T_1 = 4(p_1\cdot p_3)(p_3\cdot\epsilon_4) \text{Tr}[\cancel{\epsilon_4^*} \cancel{p_2}] - 2(p_1\cdot p_3) \text{Tr}[\cancel{p_3} \cancel{p_2}]
+$$
+
+Evaluando las trazas que quedan:
+
+$$
+\text{Tr}[\cancel{\epsilon_4^*} \cancel{p_2}] = 4(\epsilon_4^* \cdot p_2)
+\qquad
+\text{Tr}[\cancel{p_3} \cancel{p_2}] = 4(p_3\cdot p_2)
+$$
+
+Obtenemos una expresión explicita para la traza en términos de los momentos. 
+
+$$
+T_1 = 16(p_1\cdot p_3)(p_3\cdot\epsilon_4)(\epsilon_4^* \cdot p_2) - 8(p_1\cdot p_3) (p_3\cdot p_2)
+$$
+
+Usando la conservación del momento:
+
+$$
+p_1 + p_2 = p_3 + p_4
+$$
+
+$$
+p_3 = p_1 + p_2 - p_4
+$$
+
+$$
+p_3 \cdot \epsilon_4 = ( p_1 + p_2 - p_4) \cdot \epsilon_4 = p_2 \cdot \epsilon_4
+$$
+
+$$
+(p_3\cdot\epsilon_4)(\epsilon_4^* \cdot p_2) = (p_2 \cdot \epsilon_4)(\epsilon_4^* \cdot p_2)  = (p_2 \cdot\epsilon_4)^2
+$$
+
+Por otra parte:
+
+$$
+p_1 - p_4 = p_3 - p_2
+$$
+
+$$
+(p_1 - p_4)^2 = (p_3 - p_2)^2
+$$
+
+$$
+m^2c^2 -2(p_1\cdot p_4) = m^2c^2 - 2(p_3 \cdot p_2)
+$$
+
+$$
+p_3 \cdot p_2 = p_1 \cdot p_4
+$$
+
+Finalmente:
+
+$$
+\langle \mathcal{M}_1 \mathcal{M}^*_1 \rangle = 2g_e^4 \left[ 2 \frac{(p_2\cdot\epsilon_4)^2}{(p_1\cdot p_3)} - \frac{(p_1\cdot p_4)}{(p_1\cdot p_3)} \right]
+$$
+
+De la misma forma se puede hallar $\langle \mathcal{M}_2 \mathcal{M}^*_2 \rangle$ sustituyendo el orden de los fotones $3 \leftrightarrow 4$ como en los diagramas, y obtenemos que:
+
+$$
+\langle \mathcal{M}_2 \mathcal{M}^*_2 \rangle = 2g_e^4 \left[2\frac{(p_2\cdot\epsilon_3)^2}{(p_1\cdot p_4)} - \frac{(p_1\cdot p_3)}{(p_1\cdot p_4)} \right]
+$$
+
+Nos quedan hallar las trazas correspondientes a los términos cruzados. Veamos la segunda traza:
+
+$$
+T_2 = \text{Tr}[\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} \cancel{p_4} (\cancel{p_1}+ mc)  \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} (\cancel{p_2} - mc)]
+$$
+
+Usando la conservación del momento, notemos que:
+
+$$
+\cancel{p_2} = \cancel{p_3} + \cancel{p_4} - \cancel{p_1} 
+$$
+
+Luego:
+
+$$
+\begin{aligned} 
+T_2 = - \text{Tr}[\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} \cancel{p_4} (\cancel{p_1} + mc)  \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} (\cancel{p_1}+ mc) ] \\
++ \text{Tr}[\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} \cancel{p_4} (\cancel{p}_1+ mc)  \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} (\cancel{p_3} + \cancel{p_4} ) ] \\ \\
+= - \text{Tr}[\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} \cancel{p_4} \cancel{p_1}  \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} \cancel{p_1} ] - (mc)^2 \text{Tr}[\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} \cancel{p_4} \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4}] \\
++ \text{Tr}[\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} \cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} (\cancel{p_3} + \cancel{p_4}  ) ]  
+\end{aligned} 
+$$
+
+En donde los términos con un numero impar de matrices nuevamente se anulan. Usamos que:
+
+$$
+\cancel{\epsilon_3} \cancel{p_1}  = - \cancel{p_1} \cancel{\epsilon_3}  \qquad 
+\cancel{\epsilon_4} \cancel{p_1} =  - \cancel{p_1} \cancel{\epsilon_4}     
+$$
+
+$$
+\cancel{p_1} \cancel{p_3} \cancel{p_1} = 2(p_1\cdot p_3) \cancel{p_1} - \cancel{p_3} \cancel{p_1} \cancel{p_1} =  2(p_1\cdot p_3) \cancel{p_1} - (mc)^2\cancel{p_3}
+$$
+
+Y la propiedad cíclica de la traza, podemos permutar las polarizaciones como:
+
+$$
+\begin{aligned} 
+\text{Tr}[\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} \cancel{p_4} \cancel{p_1}  \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} \cancel{p_1} ] = 
+\text{Tr}[ \cancel{p_4} \cancel{p_1}  \cancel{p_3} \cancel{p_1}
+\cancel{\epsilon_3}  \cancel{\epsilon_4}
+\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} ]
+\\ \\
+= - 2(p_1 \cdot p_3 )\text{Tr}[ \cancel{p_4} \cancel{p_1}
+\cancel{\epsilon_3}  \cancel{\epsilon_4}
+\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} ] 
++ (mc)^2 \text{Tr}[ \cancel{p_4} \cancel{p_3}
+\cancel{\epsilon_3}  \cancel{\epsilon_4}
+\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} ]
+\end{aligned} 
+$$
+
+El ultimo termino se anula con otro de la expresión principal, mientras que para el primero podemos permutar $\cancel{p_1}$ con las polarizaciones usando las identidades arriba descritas, por lo que:
+
+$$
+\text{Tr}[ \cancel{p_4} \cancel{p_1}
+\cancel{\epsilon_3}  \cancel{\epsilon_4}
+\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} ] = \text{Tr}[ \cancel{p_1} \cancel{p_4}
+\cancel{\epsilon_3}  \cancel{\epsilon_4}
+\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} ]  = \text{Tr}[  \frac{1}{2}(\cancel{p_1} \cancel{p_4} + \cancel{p_4} \cancel{p_1})
+\cancel{\epsilon_3}  \cancel{\epsilon_4}
+\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} ]
+$$
+
+Luego podemos reemplazar el termino simétrico usando que el anti conmutador de las matrices de Dirac esta dado por la métrica:
+
+$$
+ \frac{1}{2}(\cancel{p_1} \cancel{p_4} + \cancel{p_4} \cancel{p_1}) = p_{1\mu} p_{4\nu}  \frac{1}{2} (\gamma^{\mu} \gamma^{\nu} + \gamma^{\nu} \gamma^{\mu}) =   p_{1\mu} p_{4\nu} g^{\mu \nu} =(p_1 \cdot p_4)
+$$
+
+Luego 
+
+$$
+\begin{aligned}
+\text{Tr}[\cancel{\epsilon_3}  \cancel{\epsilon_4}\cancel{\epsilon_3^*} \cancel{\epsilon_4^*}] = \epsilon_{3\mu} \epsilon_{4\nu}  \epsilon^*_{3\lambda} \epsilon^*_{4\sigma} 4(g^{\mu \nu}g^{\lambda \sigma} - g^{\mu \lambda}g^{\nu \sigma} + g^{\mu \sigma}g^{\nu \lambda}) \\ \\
+
+= 4(\epsilon_3\cdot \epsilon_4)(\epsilon^*_3\cdot \epsilon^*_4) - 4(\epsilon_3\cdot \epsilon^*_3)(\epsilon_4\cdot \epsilon^*_4) + 4(\epsilon_3\cdot \epsilon^*_4) (\epsilon^*_3\cdot \epsilon_4) \\ \\
+
+= 16(\epsilon_3\cdot \epsilon_4)^2 - 8\\
+\end{aligned}
+$$
+
+Reemplazando obtenemos el primer termino de la traza:
+
+$$ 
+\begin{aligned} - 
+\text{Tr}[\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} \cancel{p_4} \cancel{p_1}  \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} \cancel{p_1} ] - (mc)^2 \text{Tr}[\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} \cancel{p_4} \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4}] \\ \\ 
+= -8(p_1\cdot p_3)(p_1\cdot p_4)\big(2(\epsilon_3\cdot \epsilon_4)^2 - 1 \big)
+\end{aligned}
+$$
+
+Veamos ahora el segundo termino:
+
+$$
+\text{Tr}[\cancel{\epsilon_3^*} \cancel{\epsilon_4^*} \cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} (\cancel{p_3} + \cancel{p_4}  ) ]  = 
+\text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} (\cancel{p_3} + \cancel{p_4}  ) \cancel{\epsilon_3^*} \cancel{\epsilon_4^*} ]
+$$
+
+Desarrollando los últimos términos dentro de la traza:
+
+$$
+(\cancel{p_3} + \cancel{p_4}) \cancel{\epsilon_3^*} \cancel{\epsilon_4^*} = - \cancel{\epsilon^*_3} \cancel{p_3} \cancel{\epsilon^*_4} + \cancel{p_4} \cancel{\epsilon^*_3} \cancel{\epsilon^*_4} = - \cancel{\epsilon^*_3} \cancel{p_3} \cancel{\epsilon^*_4} + 2(p_4 \cdot \epsilon^*_3) \cancel{\epsilon^*_4} - \cancel{\epsilon^*_3} \cancel{p_4} \cancel{\epsilon^*_4}
+$$
+La traza será:
+
+$$
+\begin{aligned}
+...= 2(p_4 \cdot \epsilon^*_3) \text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} \cancel{\epsilon_4^*} ] - \text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} \cancel{\epsilon_3^*} (\cancel{p_3} + \cancel{p_4})\cancel{\epsilon_4^*} ] \\ \\
+= 
+2(p_4 \cdot \epsilon^*_3) \text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} \cancel{\epsilon_4^*} ] - \text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} \cancel{\epsilon_3^*} \cancel{p_3}\cancel{\epsilon_4^*} ] \\ \\
+= -
+2(p_4 \cdot \epsilon^*_3) \text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_3} ] + \text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} \cancel{p_3} \cancel{\epsilon_3^*} \cancel{\epsilon_4^*} ]
+\end{aligned}
+$$
+
+En donde se utilizó que $\cancel{p_4} \cancel{\epsilon^*_4} = - \cancel{\epsilon^*_4}\cancel{p_4}$ y $\cancel{p_4} \cancel{p_4} = 0$ para simplificar.   
+
+$$
+\begin{aligned}
+\text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} \cancel{p_3} \cancel{\epsilon_3^*} \cancel{\epsilon_4^*} ] \\ \\
+= 2(\epsilon_4\cdot p_3) 
+\text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_3} \cancel{\epsilon_3^*} \cancel{\epsilon_4^*} ] +
+\text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{p_3} \cancel{\epsilon_3}  \cancel{\epsilon_4} \cancel{\epsilon_3^*} \cancel{\epsilon_4^*} ] \\ \\
+= 2(\epsilon_4\cdot p_3) 
+\text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_3} \cancel{\epsilon_3^*} \cancel{\epsilon_4^*} ] = - 2(\epsilon_4\cdot p_3) 
+\text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_4^*} ]
+\end{aligned}
+$$
+
+Luego la traza será:
+
+$$
+... = -
+2(p_4 \cdot \epsilon^*_3) \text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_3} ] - 2(\epsilon_4\cdot p_3) 
+\text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_4^*} ] \\ \\
+$$
+
+Evaluando:
+
+$$
+\begin{aligned}
+\text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon_3} ] = p_{4\mu} p_{1\nu} p_{3\lambda} \epsilon_{3 \sigma} \text{Tr}[\gamma^{\mu} \gamma^{\nu} \gamma^{\lambda} \gamma^{\sigma}] 
+\\ \\ 
+= p_{4\mu} p_{1\nu} p_{3\lambda} \epsilon_{3 \sigma}  4(g^{\mu\nu} g^{\lambda \sigma} - g^{\mu\lambda} g^{\nu \sigma} + g^{\mu\sigma} g^{\nu \lambda}) 
+\\ \\
+= 4(p_4\cdot p_1)( p_3 \cdot \epsilon_3) - 4(p_4 \cdot p_3)(p_1 \cdot \epsilon_3) + 4(p_4 \cdot \epsilon_3) (p_1\cdot p_3)
+\end{aligned}
+$$
+
+
+$$
+\begin{aligned}
+\text{Tr}[\cancel{p_4} \cancel{p_1} \cancel{p_3} \cancel{\epsilon^*_4} ] = p_{4\mu} p_{1\nu} p_{3\lambda} \epsilon_{4 \sigma} \text{Tr}[\gamma^{\mu} \gamma^{\nu} \gamma^{\lambda} \gamma^{\sigma}] 
+\\ \\ 
+= p_{4\mu} p_{1\nu} p_{3\lambda} \epsilon^*_{4 \sigma}  4(g^{\mu\nu} g^{\lambda \sigma} - g^{\mu\lambda} g^{\nu \sigma} + g^{\mu\sigma} g^{\nu \lambda}) 
+\\ \\
+= 4(p_4\cdot p_1)( p_3 \cdot \epsilon^*_4) - 4(p_4 \cdot p_3)(p_1 \cdot \epsilon^*_4) + 4(p_4 \cdot \epsilon^*_4) (p_1\cdot p_3)
+\end{aligned}
+$$
+
+Usando que $p_3\cdot \epsilon_3 = p_4 \cdot \epsilon_4 = 0$ y reemplazando:
+
+$$
+\begin{aligned}
+... = -8(p_4 \cdot \epsilon^*_3) \big(- (p_4 \cdot p_3)(p_1 \cdot \epsilon_3) + (p_4 \cdot \epsilon_3) (p_1\cdot p_3)\big) \\ \\
+-8 (\epsilon_4\cdot p_3) \big( (p_4\cdot p_1)( p_3 \cdot \epsilon^*_4) - (p_4 \cdot p_3)(p_1 \cdot \epsilon^*_4) \big)
+\end{aligned}
+$$
+
+$$\begin{aligned}
+= 
+- 8(p_4 \cdot \epsilon_3)^2(p_1\cdot p_3) - 8 (\epsilon_4\cdot p_3) ^2(p_1\cdot p_4) \\ \\+ 8(p_4 \cdot \epsilon^*_3) (p_4 \cdot p_3)(p_1 \cdot \epsilon_3) + 8(\epsilon_4\cdot p_3)(p_4 \cdot p_3)(p_1 \cdot \epsilon^*_4)
+\end{aligned}
+$$
+
+Usando además que $p_1 \cdot \epsilon_3 = p_1 \cdot \epsilon_4^* = 0$ los últimos dos términos se cancelan. Reemplazando todo, la segunda traza será:
+
+$$
+\begin{aligned}
+... = -8 \big[ (p_1\cdot p_3)(p_1\cdot p_4)\big(2(\epsilon_3\cdot \epsilon_4)^2 - 1 \big) - (p_4 \cdot \epsilon_3)^2(p_1\cdot p_3) - (\epsilon_4\cdot p_3)^2(p_1\cdot p_4) \big] \\ \\
+= (p_1\cdot p_3)( p_1\cdot p_4) \big[ 
+	2(\epsilon_3\cdot \epsilon_4)^2 - 1 + \frac{(p_4\cdot \epsilon_3)^2}{(p_1 \cdot p_4)}+ \frac{(\epsilon_3 \cdot p_4)^2}{(p_1 \cdot p_3)}
+\big]
+\end{aligned}
+$$
+
+$$
+\langle \mathcal{M}_2 \mathcal{M}_1^* \rangle = 2g_e^2 \big[ 
+	2(\epsilon_3\cdot \epsilon_4)^2 - 1 + \frac{(p_4\cdot \epsilon_3)^2}{(p_1 \cdot p_4)}+ \frac{(\epsilon_4 \cdot p_3)^2}{(p_1 \cdot p_3)}
+\big]
+$$
+
+Al igual que en el primer caso, podemos reemplazar los fotones como $3 \leftrightarrow 4$ y obtener el termino restante.
+
+$$
+\langle \mathcal{M}_1 \mathcal{M}_2^* \rangle = 2g_e^2 \big[ 
+	2(\epsilon_4\cdot \epsilon_3)^2 - 1 + \frac{(p_3\cdot \epsilon_4)^2}{(p_1 \cdot p_3)}+ \frac{(\epsilon_3 \cdot p_4)^2}{(p_1 \cdot p_4)}
+\big] = 
+\langle \mathcal{M}_2 \mathcal{M}_1^* \rangle
+$$
+
+Trayendo nuevamente los términos hallados al principio:
+
+$$
+\langle \mathcal{M}_1 \mathcal{M}^*_1 \rangle = 2g_e^4 \left[ 2 \frac{(p_2\cdot\epsilon_4)^2}{(p_1\cdot p_3)} - \frac{(p_1\cdot p_4)}{(p_1\cdot p_3)} \right]
+$$
+
+$$
+\langle \mathcal{M}_2 \mathcal{M}^*_2 \rangle = 2g_e^4 \left[2\frac{(p_2\cdot\epsilon_3)^2}{(p_1\cdot p_4)} - \frac{(p_1\cdot p_3)}{(p_1\cdot p_4)} \right]
+$$
+
+El modulo cuadrado de la amplitud será:
+
+$$ 
+\langle |\mathcal{M}| ^2 \rangle = \langle |\mathcal{M}_1|^2 \rangle + \langle |\mathcal{M}_2|^2 \rangle + 2\langle \mathcal{M}_1 \mathcal{M}_2^* \rangle
+$$
+
+--- 
