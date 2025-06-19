@@ -279,9 +279,60 @@ $$
 $$
 
 $$
-t = \frac{\log(135.875)}{\frac{1}{7.04 \times10^8} - \frac{1}{44.68 \times10^8}} \text{años} = 4.104 \times 10^9 \text{años}
+t = \frac{\log(137.875) / \log(2)}{\frac{1}{7.04 \times10^8} - \frac{1}{44.68 \times10^8}} \text{años} \approx 4 \times 10^9 \text{años}
 $$
 
-Un valor muy cercano al conocido de 4.543 miles de millones de años. 
+Un valor del mismo orden de la edad conocida de la tierra de 4.543 miles de millones de años. 
+
+--- 
+
+#### Ejemplo
+
+La razón másica entre el radioisótopo $^{14}\text{C}$ y el $^{12}C$ es de $1.5 \times 10^{-12}$, por otra parte en una muestra de carbón de $64 \text{g}$ se observan $2$ desintegraciones por segundo. Hallemos la edad de la muestra considerando que la vida media del $^{14}\text{C}$ es de $5700$ años. 
+
+Primero hallemos el numero de desintegraciones por segundo de $1 \text{g}$ de materia viva. La actividad de esta dada por:
+
+$$
+A = \lambda_{14} N_{14} = \frac{\log2}{\tau_{14}} N_{14}
+$$
+
+En donde $N_{14}$ corresponde a la cantidad de núcleos de $^{14}\text{C}$ de la muestra. En $1\text{g}$ de materia 
+
+$$
+1\text{g} = m_{12} + m_{14} = m_{14}(\frac{m_{12}}{m_{14}} + 1) = m_{14}(\frac{1}{\eta} +1)
+$$
+
+Con $\eta$ la relación másica entre el $^{14}\text{C}$ y el $^{12}\text{C}$ conocida. Podemos ahora usar la masa molar del $^{14}\text{C}$ y el numero de Avogadro para hallar el numero de núcleos $N_{14}$ de la muestra.
+
+$$
+N_{14} = N_{A} \frac{1\text{g}}{(\frac{1}{\eta} + 1)} \frac{1}{14\text{g}/\text{mol}} = 6.45 \times 10^{9} 
+$$
+
+Teniendo en cuenta la vida media del carbono-14 de unos $1.7 \times 10^{11} \text{s}$ aproximadamente, hallamos la actividad como:
+
+$$
+A = 0.25 \text{s}^{-1}
+$$
+
+El hecho de que la muestra sea de materia viva, implica que la cantidad de es igual a la de la atmosfera, puesto a que el proceso de fotosíntesis incorpora el átomo radiactivo en los organismos autótrofos, y estos son consumidos luego por los heterótrofos.
+
+Se tiene ahora que la actividad de la muestra de carbón $64\text{g}$ es de $2$ desintegraciones por segundo, una actividad menor a la obtenida en el resultado anterior, es decir al transcurrir el tiempo una fracción de los núcleos de $^{14} \text{C}$ se desintegraron y la actividad disminuyo con respecto a la de la materia viva.
+
+
+Luego si se toma la relación másica de núcleos de $^{14} \text{C}$ en la muestra de carbón igual a la de la materia viva en $t=0$ usando la ley de desintegración exponencial:
+
+$$
+N_{14}(t) = N_{14}(0) \exp(-\frac{\log2}{\tau_{14}} t)
+\Rightarrow 
+t = \tau_{14} \frac{\log(\frac{N_{14}(0)}{N_{14}(t)})}{\log2}
+$$
+
+En donde la relación entre poblaciones puede hallarse directamente como:
+
+$$
+\frac{N_{14}(0)}{N_{14}(t)} = \frac{m_{14}(0)}{m_{14}(t)} = \frac{A(0)}{A(t)} \approx \frac{(0.25)}{2/64} = 2^3
+$$
+
+Al tomar logaritmos, bajar el exponente y dividir por $\log2$ los logaritmos se cancelan, luego la edad de la muestra será simplemente $5700 * 3 = 17100$ años.  
 
 --- 
