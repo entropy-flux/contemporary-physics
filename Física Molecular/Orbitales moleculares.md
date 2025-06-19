@@ -19,15 +19,13 @@ $$
 \quad \ket{\psi_r} = \sum_{i}\phi_{ri} \ket{\phi_{ri}} 
 $$
 
-Luego los orbitales moleculares se llenan con electrones de teniendo en cuenta el principio de exclusión de Pauli.  Volvamos al caso del ion de hidrogeno. Habíamos encontrado que podíamos aproximar sus orbitales como:
+Luego, los orbitales moleculares se llenan con electrones, teniendo en cuenta el principio de exclusión de Pauli.  Volvamos al caso del ion de hidrogeno, habíamos encontrado que podíamos aproximar sus orbitales como:
 
 $$
 \ket{\psi_+} \sim \ket{\phi_a} + \ket{\phi_b} \qquad \ket{\psi_-} \sim \ket{\phi_a} - \ket{\phi_b}
 $$
 
-En el átomo de hidrogeno, los electrones tienen un momento angular orbital $\vec{L}$ y sus funciones son autoestados de los operadores $\hat{L}^2$ y $\hat{L}_z$.
-
-Debido a la simetría cilíndrica de la molécula, se puede afirmar que la funciones de onda $\ket{\psi_{+}}$ sigue siendo auto-estado del operador $\hat{L}_z$ ya que esta es una combinación lineal de los orbitales atómicos del átomo de hidrogeno. 
+En el átomo de hidrogeno, los electrones tienen un momento angular orbital $\vec{L}$ y sus funciones son autoestados de los operadores $\hat{L}^2$ y $\hat{L}_z$. Debido a la simetría cilíndrica de la molécula, se puede afirmar que la función de onda $\ket{\psi_{+}}$ sigue siendo auto-estado del operador $\hat{L}_z$ ya que esta es una combinación lineal de los orbitales atómicos del átomo de hidrogeno. 
 
 Dada entonces las auto-energías $\hbar m$ del operador $\hat{L}_z$, con $m = 0, \pm 1, \pm 2 ...$ denotamos los orbitales de sus correspondientes auto-estados como $\sigma, \pi, \delta,...$. Llenando entonces el orbital $\sigma_{1s}$ del ion $\text{H}_2^+$ se obtiene su estado fundamental. 
 
@@ -66,19 +64,22 @@ $$
 
 En donde los orbitales atómicos $\phi_{2s}$ y $\phi_{2p_z}$ corresponden a los átomos $\text{Li}$ y $\text{F}$, respectivamente. Verifiquemos que $\ket{\psi}$ esta normalizada si $A^2 + B^2 + C^2 = 1$. Escribamos los orbitales atómicos que intervienen en la función de onda propuesta.  
 
-$$ 
+$$
+\begin{aligned} 
 \langle \psi \ket {\psi} = \frac{A^2}{2} [2 \langle \phi_{1s},\phi_{2p_z}\ket{\phi_{1s},\phi_{2p_z}} + 2\langle \phi_{2p_z},\phi_{1s}\ket{\phi_{1s},\phi_{2p_z}}]
-$$
+\\ \\
++ B^2 \langle{\phi_{2s},\phi_{2s}} \ket{\phi_{2s},\phi_{2s}} 
++ C^2 \langle \phi_{2_{p_z}},\phi_{2_{p_z}} \ket{\phi_{2_{p_z}},\phi_{2_{p_z}}} 
+\\ \\
++ \frac{AB}{\sqrt{2}} \langle \phi_{1s},\phi_{2p_z}\ket{\phi_{2s},\phi_{2s}} 
++ \frac{AB}{\sqrt{2}} \langle \phi_{2p_z},\phi_{1s}\ket{\phi_{2s},\phi_{2s}}
+\\ \\
++ \frac{AC}{\sqrt{2}} \langle \phi_{1s},\phi_{2p_z}\ket{\phi_{2p_z},\phi_{2p_z}} 
++ \frac{AC}{\sqrt{2}} \langle \phi_{2p_z},\phi_{1s}\ket{\phi_{2p_z},\phi_{2p_z}} 
+\\ \\
++ BC \langle{\phi_{2_{p_z}}, \phi_{2_{p_z}}} \ket{\phi_{2s},\phi_{2s}} + CB \langle \phi_{2s},\phi_{2s} \ket{\phi_{2_{p_z}}, \phi_{2_{p_z}}}
+\end{aligned} 
 
-$$
-B^2 \langle{\phi_{2s},\phi_{2s}} \ket{\phi_{2s},\phi_{2s}} +C^2 \langle \phi_{2_{p_z}},\phi_{2_{p_z}} \ket{\phi_{2_{p_z}},\phi_{2_{p_z}}} +
-\frac{AB}{\sqrt{2}} \langle \phi_{1s},\phi_{2p_z}\ket{\phi_{2s},\phi_{2s}} + \frac{AB}{\sqrt{2}} \langle \phi_{2p_z},\phi_{1s}\ket{\phi_{2s},\phi_{2s}}
-$$
-
-$$
-\frac{AC}{\sqrt{2}} \langle \phi_{1s},\phi_{2p_z}\ket{\phi_{2p_z},\phi_{2p_z}} + \frac{AC}{\sqrt{2}} \langle \phi_{2p_z},\phi_{1s}\ket{\phi_{2p_z},\phi_{2p_z}}
-+
-BC \langle{\phi_{2_{p_z}}, \phi_{2_{p_z}}} \ket{\phi_{2s},\phi_{2s}} + CB \langle \phi_{2s},\phi_{2s} \ket{\phi_{2_{p_z}}, \phi_{2_{p_z}}}
 $$
 
 En donde los orbitales atómicos se pueden escribir como:
