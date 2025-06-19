@@ -1,0 +1,311 @@
+La ecuación de Dirac, es una ecuación de primer orden que describe partículas de spin $1/2$. Esta es consistente con los principios de la mecánica cuántica y relatividad y es esencial para construir el modelo estándar.
+
+Supongamos una partícula de masa $m$ y un $4$-momento $p$. La relación de dispersión relativista establece que:
+
+$$
+(p\cdot p) = (mc)^2 \Rightarrow p^{\mu}p_{\mu} - (mc)^2 = 0
+$$
+
+En el contexto cuántico, el momento se representa mediante operadores diferenciales, es decir:
+
+$$
+p_{\mu} \rightarrow -i\hbar \partial_{\mu}
+$$
+
+Proponemos coeficientes $\gamma^{\mu}$ para factorizar la ecuación y expresarla en términos de las componentes covariantes del momento, es decir:
+
+$$
+p^{\mu} p_{\mu} - (mc)^2 = (\gamma^{\mu} p_{\mu} - mc)(\gamma^{\nu} p_{\nu} + mc) = 0
+$$
+
+Para que esta factorización sea válida, los coeficientes $\gamma^{\mu}$ deben ser matrices y verificar la relación:
+
+$$
+\{\gamma^{\mu}, \gamma^{\nu}\} = \gamma^{\mu} \gamma^{\nu} + \gamma^{\nu} \gamma^{\mu} = 2g^{\mu \nu} I
+$$
+
+Con $g$ el tensor métrico de Minkowski. Esta ultima relación se denomina relación de anti conmutación de Clifford y puede demostrarse que las matrices que satisfacen esta relación son:
+
+$$ \gamma^{0} = \begin{pmatrix} \hat{\mathbb{I}} & 0 \\ 0 & -\hat{\mathbb{I}} \end{pmatrix} \qquad \gamma^{\mu} = \begin{pmatrix} 0 & \hat{\sigma}_{\mu} \\ \hat{\sigma}_{\mu} & 0 \ \end{pmatrix} $$
+
+Con $\hat{\sigma}_{\mu}$ las matrices de Pauli:
+
+$$
+\hat{\sigma}_1 = 
+\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix} \quad
+\hat{\sigma}_2 = 
+\begin{pmatrix}
+0 & -i \\
+i & 0
+\end{pmatrix} \quad
+\hat{\sigma}_3 = 
+\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}
+$$
+
+Las funciones de onda que transforma esta ecuación deben ser vectores de cuatro componentes, llamados **espinores de Dirac** y los escribimos como:
+
+$$
+\psi = \begin{pmatrix} \psi^0 \\ \psi^1 \\ \psi^2 \\ \psi^3 \end{pmatrix}
+$$
+
+Entonces, al aplicar esta factorización sobre un espinor $\psi$ y tomar uno de los factores como nulo, se obtiene la ecuación de Dirac:
+
+$$
+i\gamma^{\mu} \partial_{\mu} \psi -mc \psi = 0
+$$
+
+### Evolución temporal
+
+Ignoremos por un momento las componentes espaciales y veamos la componente $0$ correspondiente a la componente temporal de los $4$-vectores, es decir:
+
+$$
+i\hbar \gamma^0 \frac{1}{c} \frac{\partial}{\partial t} \psi - mc \psi = 0
+$$
+
+El espinor que puede dividirse en dos componentes $\psi = \begin{pmatrix} \psi_A \ \psi_B \end{pmatrix}$ , de forma que:
+
+$$
+i\hbar \begin{pmatrix} \mathbb{\hat{I}} & 0 \\ 0 & -\mathbb{\hat{I}} \end{pmatrix} \begin{pmatrix} \psi_A \\ \psi_B \end{pmatrix} -mc \begin{pmatrix} \psi_A \\ \psi_B \end{pmatrix} = 0
+$$
+
+Luego la ecuación diferencial matricial $4\times 4$ se reduce a dos ecuaciones diferenciales $2\times 2$ dadas por:
+
+$$ 
+\frac{\partial}{\partial t} \psi_A = -i\frac{mc^2}{\hbar} \psi_A \qquad \frac{\partial}{\partial t} \psi_B = i\frac{mc^2}{\hbar} \psi_B 
+$$
+
+Resolviendo ambos ecuaciones encontramos que las componentes del espinor evolucionan como:
+
+$$ 
+\psi_A \sim \exp{(-i\frac{mc^2}{\hbar}t)} \qquad \psi_B \sim \exp{(i\frac{mc^2}{\hbar}t)}
+$$
+
+Dado a que el factor $mc^2$ es la energía en reposo de la partícula, la función de onda evoluciona como $\psi_A \sim \exp{(-iE /\hbar t})$, lo cual implica propagación hacia el futuro en el tiempo y no implica ninguna inconsistencia, sin embargo, la ecuación de Dirac también admite soluciones de la forma
+$\psi_B \sim \exp{(iE/\hbar t)}$, las cuales a primera instancia parecerían una violación de la causalidad. Estas soluciones en realidad corresponden a las _anti-partículas_, las cuales son las mismas partículas pero con carga opuestas, y pueden interpretarse en la electrodinámica cuántica como una antipartícula con energía positiva propagándose en la dirección opuesta en el espacio-tiempo
+
+### Ondas planas
+
+Supongamos ahora soluciones en forma de ondas planas, es decir:
+
+$$
+\psi(x) = u(k) ae^{-ik\cdot x}
+$$
+
+Luego la ecuación de Dirac se reduce a:
+
+$$
+(\hbar \gamma^{\mu} k_{\mu} - mc)u(k) = 0
+$$
+
+Notemos que la suma $\gamma^{\mu} k_{\mu}$ puede escribirse como:
+
+$$ 
+\gamma^{\mu} k_{\mu} = \gamma^0k_0 - \vec{\gamma}\cdot\vec{k} 
+= k^0 \begin{pmatrix} \hat{\mathbb{I}} & 0 \\ 0 & -\hat{\mathbb{I}} \end{pmatrix} - \vec{k} \cdot \begin{pmatrix} 0 & \vec{\sigma} \\ -\vec{\sigma} & 0 \end{pmatrix} 
+= \begin{pmatrix} k^0\hat{\mathbb{I}} & -\vec{k} \cdot \vec{\sigma} \\ \vec{k} \cdot \vec{\sigma} & -k^0\hat{\mathbb{I}} \end{pmatrix} 
+$$
+
+Reemplazando en la ecuación de ondas planas, podemos escribir esta de forma matricial como:
+
+$$ 
+\begin{pmatrix} \hat{\mathbb{I}}(\hbar k^0 - mc) & -\hbar \vec{k} \cdot \vec{\sigma} \\ \hbar \vec{k} \cdot \vec{\sigma} & -\hat{\mathbb{I}}(\hbar k^0 + mc) \end{pmatrix} \begin{pmatrix} u_A \\ u_B\end{pmatrix} = 0 
+$$
+
+En donde las componentes $u_A$ y $u_B$ corresponden a la partícula y la anti-partícula respectivamente. Resolviendo obtenemos:
+
+$$
+u_A = \frac{\vec{k} \cdot \vec{\sigma}}{k^0 - mc/\hbar} u_B 
+\qquad
+u_B = \frac{\vec{k} \cdot \vec{\sigma}}{k^0 + mc/ \hbar} u_A
+$$
+
+$$
+\vec{k} \cdot \vec{\sigma} 
+= k_x \begin{pmatrix} 0 & 1 \\ 1 & 0\end{pmatrix}
++ k_y \begin{pmatrix} 0 & -i \\ i & 0\end{pmatrix}
++ k_z \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+= \begin{pmatrix} k_z & k_x -ik_y \\ k_x + ik_y & -k_z \end{pmatrix}
+$$
+
+Se torna útil también hallar el cuadrado del producto anterior, ya que:
+
+$$
+(\vec{k} \cdot \vec{\sigma})^2 =  \begin{pmatrix} k_z & k_x -ik_y \\ k_x + ik_y & -k_z \end{pmatrix} \begin{pmatrix} k_z & k_x -ik_y \\ k_x + ik_y & -k_z \end{pmatrix} = \begin{pmatrix} |\vec{k}|^2 & 0 \\ 0 &  |\vec{k}|^2 \end{pmatrix} =  |\vec{k}|^2 \mathbb{\hat{I}}
+$$
+
+Usando estas expresiones podemos probar que $\hbar \vec{k}$ es en realidad el $4$-momento de la onda. Reemplazando $u_B$ en $u_A$ obtenemos que:
+
+$$
+u_A = \frac{|\vec{k}|^2}{(k^0)^2 - (mc/\hbar)^2} u_A 
+\Rightarrow 
+(k^0)^2 - |\vec{k}|^2 = k\cdot k  = (mc)^2 /\hbar^2
+$$
+
+Esto nos dice que el vector de onda se conserva en el espacio-tiempo y que necesariamente $\hbar k = \pm p$ . 
+
+Podemos ahora hallar una base para el conjunto de ondas planas soluciones a la ecuación de Dirac. Para ello elegimos una basa para las componentes correspondientes a las partículas y hallamos las componentes correspondientes a las anti-partículas en función de estas. Eligiendo una base para $u_A$ con $\hbar k = p$:
+
+$$
+u^{(1)}_A = \begin{pmatrix} 1 \\ 0\end{pmatrix} \Rightarrow
+u^{(1)}_B = \frac{\vec p \cdot \vec \sigma}{p^0 + mc} \begin{pmatrix} 1 \\ 0\end{pmatrix} = \frac{c}{E + mc^2} \begin{pmatrix} p_z \\ p_x + ip_y\end{pmatrix}
+$$
+
+$$
+u_A^{(2)} = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \Rightarrow
+u^{(2)}_B = \frac{\vec p \cdot \vec \sigma}{p^0 + mc} \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \frac{c}{E + mc^2} \begin{pmatrix} p_x - i p_y \\ -p_z \end{pmatrix}
+$$
+
+Por otra parte eligiendo una base para $v_B$ con $\hbar k = -p$ obtenemos: 
+
+$$
+v_A^{(1)} = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \Rightarrow
+v^{(1)}_B = \frac{c}{E + mc^2} \begin{pmatrix} p_x - i p_y \\ -p_z \end{pmatrix}
+$$
+
+$$
+v^{(2)}_B = \begin{pmatrix} 1 \\ 0 \end{pmatrix}
+\Rightarrow v^{(2)}_{A} = \frac{c}{E + mc^2} \begin{pmatrix} p_z \\ p_x + ip_y\end{pmatrix}
+$$
+
+En donde se uso que $\hbar k = -p$ en el segundo caso ya que de otra forma las soluciones $v_b$ divergen cuando el momento de la partícula es nulo. Luego:
+
+$$
+u^{(1)} = \begin{pmatrix} 1 \\ 0 \\ \frac{cp_z}{E + mc^2} \\ \frac{c(p_x + ip_y)}{E + mc^2} \end{pmatrix} 
+\qquad 
+u^{(2)} = \begin{pmatrix} 0 \\ 1 \\ \frac{c(p_x - ip_y)}{E + mc^2} \\ \frac{-c p_z}{E + mc^2} \end{pmatrix}  
+\qquad
+v^{(1)} = \begin{pmatrix} \frac{c(p_x - ip_y)}{E + mc^2} \\ \frac{-cp_z}{E + mc^2} \\ 0 \\ 1\end{pmatrix}
+\qquad
+v^{(2)} = \begin{pmatrix} \frac{cp_z}{E + mc^2} \\ \frac{c(p_x + ip_y)}{E + mc^2} \\ 1 \\ 0\end{pmatrix}
+$$
+
+Buscamos ahora la norma de estos espinores. Notemos que:
+
+$$
+\begin{aligned}
+(u^{(1)})^{\dagger}u^{(1)} \sim \begin{pmatrix} 1 & 0 & \frac{cp_z}{E + mc^2} & \frac{c(p_x - i p_y)}{E + mc^2}  \end{pmatrix} \begin{pmatrix} 1 \\ 0 \\ \frac{cp_z}{E + mc^2} \\ \frac{c(p_x + i p_y)}{E + mc^2} \end{pmatrix} = 1 + \frac{c|\vec{p}|}{(E + mc^2)^2}\\
+= 1 + \frac{(E/c)^2 - (mc)^2}{(E/c + mc)^2}  = 1 + \frac{E/c - mc}{E/c + mc} = \frac{2E/c}{E/c + mc}
+\end{aligned}
+$$
+
+El mismo resultado se puede hallar para el resto de los espinores. Luego si se busca que la norma de estos sea $2E/c$ (Convención Halzen-Martin) , entonces:
+
+$$
+\frac{2E/c}{E/c + mc} N^2 = 2E/c \Rightarrow N = \sqrt{E/c + mc} 
+$$
+
+Finalmente, las soluciones canónicas para la ecuación de Dirac serán para las partículas:
+
+$$ 
+\psi^{(1)} = \frac{c}{\sqrt{E + mc^2}} \begin{pmatrix} 1 \\ 0 \\ \frac{cp_z}{(E + mc^2)} \\ \frac{c(p_x + i p_y)}{E + mc^2}  \end{pmatrix} e^{-i\frac{mc^2}{\hbar}t} \qquad \psi^{(2)} 
+= 
+\frac{c}{\sqrt{E + mc^2}} \begin{pmatrix} 0 \\ 1 \\ \frac{c(p_x - i p_y)}{E + mc^2} \\ \frac{-cp_z}{E + mc^2}  \end{pmatrix}  e^{-i\frac{mc^2}{\hbar}t}
+$$
+
+Y para las antipartículas:
+
+$$
+\psi^{(3)} = \frac{c}{\sqrt{E + mc^2}} \begin{pmatrix} \frac{c(p_x - i p_y)}{E + mc^2} \\ \frac{-cp_z}{E + mc^2} \\ 0 \\ 1 \end{pmatrix}  e^{i\frac{mc^2}{\hbar}t}
+\qquad
+\psi^{(4)} = \frac{c}{\sqrt{E + mc^2}} \begin{pmatrix} \frac{cp_z}{E + mc^2} \\ \frac{c(p_x + i p_y)}{E + mc^2}  \\ 1 \\ 0 \end{pmatrix} e^{i\frac{mc^2}{\hbar}t} 
+$$
+
+### Espín
+
+Consideramos ahora la matriz $\vec{S}$ compuesta por las matrices de Pauli:
+
+$$
+\vec{S} = \frac{\hbar}{2} \begin{pmatrix} \vec{\sigma} & 0 \\ 0 & \vec{\sigma} \end{pmatrix}
+$$
+
+Es fácil ver que los espinores encontrados no son auto-estados de la matriz $\vec{S}$. Basta con verificar con las ultimas componentes de $u^{(1)}$ con la componente $\hat{S}_z$:
+
+$$
+\begin{pmatrix}1 & 0 \\ 0 & -1 \end{pmatrix}
+\begin{pmatrix} \frac{cp_z}{E + mc^2} \\ \frac{c(p_x + ip_y)}{E + mc^2} \end{pmatrix} = 
+\begin{pmatrix} \frac{cp_z}{E + mc^2} \\ -\frac{c(p_x + ip_y)}{E + mc^2} \end{pmatrix} 
+$$
+
+Luego $u^{(1)}$ no puede ser un auto vector de $\hat{S}_z$. Sin embargo los espinores pueden ser orientados en la espacial dirección $z$ . Si las otras componentes se anulan se tendrá que:
+
+$$
+cp_z = c|\vec{p}| = \sqrt{E^2 - (mc^2)^2} = \sqrt{E-mc^2} \sqrt{E+mc^2}
+$$
+
+Luego reemplazando:
+
+$$
+u^{(1)} = \frac{c}{\sqrt{E + mc^2}} \begin{pmatrix} 1 \\ 0 \\ \frac{\sqrt{E-mc^2}}{\sqrt{E+mc^2}} \\ 0 \end{pmatrix} = \frac{c}{E+ mc^2} \begin{pmatrix} \sqrt{E+mc^2} \\ 0 \\ \sqrt{E-mc^2} \\ 0\end{pmatrix}
+$$
+
+De la misma forma pueden orientarse hacia la dirección $z$ los espinores restantes y obtenemos para cada uno que:
+
+$$
+u^{(2)} = \frac{c}{E+mc^2} \begin{pmatrix} 0 \\  \sqrt{E+mc^2} \\ 0 \\  \sqrt{E-mc^2} \end{pmatrix}
+$$
+
+$$
+v^{(1)} =  \frac{c}{E+mc^2}\begin{pmatrix} 0 \\  -\sqrt{E-mc^2} \\ 0 \\  \sqrt{E+mc^2} \end{pmatrix}
+\qquad
+v^{(2)} = \frac{c}{E+mc^2}\begin{pmatrix} \sqrt{E-mc^2} \\ 0 \\  \sqrt{E+mc^2} \\ 0 \end{pmatrix}
+$$
+
+De esta forma ahora todos ellos son auto vectores del operador spin $\hat{S}_z$. Veamos esto:
+
+$$ 
+\hat{S}_z u^{(1)} = \frac{\hbar}{2} \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix} \begin{pmatrix} \sqrt{(E + mc^2)/c} \\ 0 \\ \sqrt{(E - m c^2)/c} \\ 0 \end{pmatrix} =  \frac{\hbar}{2}  \begin{pmatrix} \sqrt{(E + mc^2)/c} \\ 0 \\ \sqrt{(E - m c^2)/c} \\ 0 \end{pmatrix} = \frac{\hbar}{2} u^{(1)}
+$$
+
+$$ 
+\hat{S}_z u^{(2)} = \frac{\hbar}{2} \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix} \begin{pmatrix} 0 \\ \sqrt{(E + mc^2)/c} \\ 0 \\ -\sqrt{(E - m c^2)/c} \end{pmatrix} = -\frac{\hbar}{2}  \begin{pmatrix} 0 \\ \sqrt{(E + mc^2)/c} \\ 0 \\ -\sqrt{(E - m c^2)/c} \end{pmatrix} = -\frac{\hbar}{2} u^{(2)}
+$$
+  
+$$ 
+\hat{S}_z v^{(1)} = \frac{\hbar}{2} \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix} \begin{pmatrix} 0 \\  -\sqrt{(E - m c^2)/c}  \\ 0 \\ \sqrt{(E + mc^2)/c} \end{pmatrix} =  -\frac{\hbar}{2}  \begin{pmatrix} 0 \\  -\sqrt{(E - m c^2)/c}  \\ 0 \\ \sqrt{(E + mc^2)/c} \end{pmatrix} = -\frac{\hbar}{2} v^{(1)}
+$$
+
+$$ 
+\hat{S}_z v^{(2)} =  \frac{\hbar}{2} \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix} \begin{pmatrix} \sqrt{(E - m c^2)/c} \\ 0 \\ \sqrt{(E + mc^2)/c} \\ 0 \end{pmatrix} =  \frac{\hbar}{2}  \begin{pmatrix} \sqrt{(E - m c^2)/c} \\ 0 \\ \sqrt{(E + mc^2)/c} \\ 0 \end{pmatrix} = \frac{\hbar}{2} v^{(2)}
+$$
+
+Luego $u^{(1)}$, $u^{(2)}$, $v^{(1)}$, $v^{(2)}$ como *auto-espinores* del operador $\hat{S}_z$, en donde  $u^{(1)}$, $u^{(2)}$ corresponden a electrones con espines $\ket{\uparrow}$ y $\ket{\downarrow}$ respectivamente, y a  $v^{(1)}$, $v^{(2)}$ como positrones con espín $\ket{\downarrow}$ y $\ket{\uparrow}$ respectivamente.
+
+### Conjugados de carga
+
+Otro operador importante que se puede identificar, es el de conjugación de carga ($C$), el cual transforma un espinor de Dirac $\psi$ en el espinor conjugado de carga $\psi_c$ dado por:
+
+$$ \psi_c = i \gamma^2 \psi^* $$
+
+Donde $\gamma^2$ es la tercera matriz de Dirac, dada por:
+
+$$ 
+\gamma^2 = \begin{pmatrix} 0 & 0 & 0 & -i \\  0 & 0 & i & 0 \\ 0 & i & 0 & 0 \\ -i & 0 & 0 & 0 \end{pmatrix} 
+$$
+
+Se puede probar que los conjugados de carga de los auto-espinores de las partículas $u^{(1)}$ y $u^{(2)}$ son iguales a los auto-espinores $v^{(1)}$ y $v^{(2)}$ de las anti-partículas, respectivamente. Esto es:
+
+$$ 
+u^{(1)}_c = i \gamma^2 (u^{(1)})^* \sim \begin{pmatrix} 0 & 0 & 0 & 1 \\  0 & 0 & -1 & 0 \\ 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \\ \frac{cp_z}{E + mc^2} \\ \frac{c(p_x - i p_y)}{E + mc^2} \end{pmatrix} = \begin{pmatrix} \frac{c(p_x - i p_y)}{E + mc^2} \\ -\frac{cp_z}{E + mc^2} \\ 0 \\ 1 \end{pmatrix} \Rightarrow u_c^{(1)} = v^{(1)}
+$$
+  
+$$ 
+u^{(2)}_c = i \gamma^2 (u^{(2)})^* \sim \begin{pmatrix} 0 & 0 & 0 & 1 \\  0 & 0 & -1 & 0 \\ 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \\ \frac{c(p_x - i p_y)}{E + mc^2} \\ -\frac{cp_z}{E + mc^2} \end{pmatrix} =\begin{pmatrix}  \frac{cp_z}{E + mc^2} \\  \frac{c(p_x - i p_y)}{E + mc^2} \\1 \\0 \end{pmatrix} \Rightarrow u_c^{(2)} = v^{(2)}
+$$
+
+Esto nos dice que los conjugados de carga de cada partículas son sus respectivas anti-partículas. De la misma forma para los espinores $v^{(1)}$ y $v^{(2)}$ tendremos que:
+
+$$
+v_c^{(1)} = i\gamma^2 (v^{(1)})^* \sim\begin{pmatrix} 0 & 0 & 0 & 1 \\  0 & 0 & -1 & 0 \\ 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \end{pmatrix} \begin{pmatrix} \frac{c(p_x - i p_y)}{E + mc^2} \\ -\frac{cp_z}{E + mc^2} \\ 0 \\ 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \\ \frac{cp_z}{E + mc^2} \\ \frac{c(p_x - i p_y)}{E + mc^2} \end{pmatrix} \Rightarrow v_c^{(1)} = u^{(1)}
+$$
+
+$$
+v_c^{(2)} = i\gamma^2 (v^{(2)})^* \sim\begin{pmatrix} 0 & 0 & 0 & 1 \\  0 & 0 & -1 & 0 \\ 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \end{pmatrix} \begin{pmatrix} \frac{cp_z}{E + mc^2} \\ \frac{c(p_x + i p_y)}{E + mc^2} \\ 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ 1 \\ -\frac{c(p_x + i p_y)}{E + mc^2} \\ \frac{cp_z}{E + mc^2} \end{pmatrix} \Rightarrow v_c^{(2)} = u^{(2)}
+$$
+
+Este resultado no solo refleja una simetría fundamental en la formulación de la teoría de Dirac, sino que también ilustra el papel de la **conjugación de carga** como una transformación que convierte partículas en sus correspondientes antipartículas, invirtiendo sus cargas internas (como la carga eléctrica o el número leptónico) pero manteniendo su momento y energía.
