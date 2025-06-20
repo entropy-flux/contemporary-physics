@@ -104,7 +104,7 @@ $$
 i(2\pi)^4 \delta^4(p_1+p_2-p_3-p_4) \mathcal{M} 
 = 
 \int \big[\bar{u}^{(s_3)}(p_3) (ig_e\gamma^{\mu}) u^{(s_1)}(p_1)\big] (2\pi)^4\delta^4(p_1 - q - p_3)
-\\
+\\ \\
 (-\frac{ig_{\mu\nu}}{q^2}) (2\pi)^4\delta^4(p_2 + q - p_4) 
 \big[ \bar{u}^{(s_4)}(p_4) (ig_e\gamma^{\nu}) u^{(s_2)}(p_2) \big]
 \end{aligned}
@@ -165,39 +165,31 @@ $$
 $$
 
 $$
+\begin{aligned}
 \langle G_1\rangle =  \frac{1}{2}\sum_{s_3}\sum_{s_1} G_1 =  \frac{1}{2}\sum_{s_3} 
 \bar{u}^{(s_3)}(p_3) \gamma^{\mu} ( \cancel{p_1} + mc) \gamma^{\nu} u^{(s_3)}(p_3) 
+\\ \\
 =  \frac{1}{2} \text{Tr}[\gamma^{\mu} ( \cancel{p_1} + mc) \gamma^{\nu} (\cancel{p_3} + mc)]
-$$
-
-$$
+\\ \\
 =  \frac{1}{2} (p_{1\sigma})( p_{3\lambda})\text{Tr}[\gamma^{\mu} \gamma^{\sigma} \gamma^{\nu} \gamma^{\lambda}] +  \frac{1}{2} (mc)^2 \text{Tr}[\gamma^{\mu} \gamma^{\nu}]
-$$
-
-$$
+\\ \\
 = 2(p_{1\sigma})( p_{3\lambda})(g^{\mu \sigma} g^{\nu \lambda} - g^{\mu \nu}  g^{\sigma \lambda} + g^{\mu \lambda} g^{\sigma \lambda}) + 2(mc)^2 g^{\mu \nu}
-$$
-
-$$
+\\ \\
 = 2 \big[p_1^{\mu} p_3^{\nu} + p_3^{\mu} p_1^{\nu} + ((mc)^2 - (p_1 \cdot p_3))g^{\mu \nu} \big]
+\end{aligned}
 $$
 
 De la misma forma para $G_2$ tenemos que:
 
-$$
+$$ \begin{aligned}
 \langle G_2\rangle =  \frac{1}{2}\sum_{s_3} \sum_{s_1} G_2 =  \frac{1}{2}\text{Tr}[\gamma_{\mu}  ( \cancel{p_2} + Mc) \gamma_{\nu} (\cancel{p_4} + Mc)]
-$$
-
-$$
+\\ \\
 =  \frac{1}{2} (p_{2\sigma})(p_{4\lambda}) \text{Tr}[\gamma_{\mu} \gamma^{\sigma} \gamma_{\nu} \gamma^{\lambda}] +  \frac{1}{2} (Mc)^2 \text{Tr}[\gamma_{\mu} \gamma_{\nu}]
-$$
-
-$$
+\\ \\
 = 2(p_{2\sigma})(p_{4\lambda})(g_{\mu}{}^{\sigma} g_{\nu}{}^{\lambda} - g_{\mu \nu} g^{\lambda \sigma} + g_{\mu}{}^{\lambda} g_{\nu}{}^{\sigma}) + 2 (Mc)^2 g_{\mu \nu} 
-$$
-
-$$
+\\ \\
 = 2 \big[p_{2\mu} p_{4\nu} + p_{4\mu} p_{2\nu} + ((Mc)^2 - (p_2 \cdot p_4))g_{\mu \nu} \big] 
+\end{aligned}
 $$
 
 Multiplicando $\langle G_1\rangle$ y $\langle G_2\rangle$ obtenemos:
@@ -208,9 +200,9 @@ $$
 
 $$
 \begin{aligned}
-= 4[2 (p_1\cdot p_2)(p_3 \cdot p_4) +  2(p_2\cdot p_3)(p_4 \cdot p_1) \\
-+ 4((mc)^2 - (p_1 \cdot p_3))((Mc)^2 - (p_2 \cdot p_4))\\
-+ 2 (p_1 \cdot p_3) ((Mc)^2 - (p_2 \cdot p_4)) \\
+= 4[2 (p_1\cdot p_2)(p_3 \cdot p_4) +  2(p_2\cdot p_3)(p_4 \cdot p_1) \\ \\
++ 4((mc)^2 - (p_1 \cdot p_3))((Mc)^2 - (p_2 \cdot p_4))\\ \\
++ 2 (p_1 \cdot p_3) ((Mc)^2 - (p_2 \cdot p_4)) \\ \\
 + 2 (p_2 \cdot p_4) ((mc)^2 - (p_1 \cdot p_3))
 ] 
 \end{aligned}
@@ -218,9 +210,9 @@ $$
 
 $$
 \begin{aligned}
-= 4 [ 2 (p_1\cdot p_2)(p_3 \cdot p_4) +  2(p_2\cdot p_3)(p_4 \cdot p_1) \\
-4 (m M c^2)^2 - 4(Mc)^2(p_1 \cdot p_3) - 4(mc)^2(p_2 \cdot p_4) + 4(p_1 \cdot p_3)(p_2 \cdot p_4)\\ 
-+ 2(p_1 \cdot p_3) (Mc)^2 - 2(p_1 \cdot p_3)(p_2\cdot p_4) \\
+= 4 [ 2 (p_1\cdot p_2)(p_3 \cdot p_4) +  2(p_2\cdot p_3)(p_4 \cdot p_1) \\ \\
+4 (m M c^2)^2 - 4(Mc)^2(p_1 \cdot p_3) - 4(mc)^2(p_2 \cdot p_4) + 4(p_1 \cdot p_3)(p_2 \cdot p_4)\\ \\
++ 2(p_1 \cdot p_3) (Mc)^2 - 2(p_1 \cdot p_3)(p_2\cdot p_4) \\ \\
 + 2(p_2 \cdot p_4) ((mc)^2 - 2(p_2 \cdot p_4)(p_1 \cdot p_3))
 ]
 \end{aligned}
@@ -228,7 +220,7 @@ $$
 
 $$
 \begin{aligned}
-= 8 [ (p_1\cdot p_2)(p_3 \cdot p_4) +  (p_2\cdot p_3)(p_4 \cdot p_1) \\
+= 8 [ (p_1\cdot p_2)(p_3 \cdot p_4) +  (p_2\cdot p_3)(p_4 \cdot p_1) \\ \\
 2(m M c^2)^2 - (Mc)^2(p_1 \cdot p_3) - (mc)^2(p_2 \cdot p_4)(p_2 \cdot p_4)]
 \end{aligned}
 $$
@@ -237,7 +229,7 @@ Reemplazando podemos hallar el valor esperado del modulo cuadrado de la amplitud
 
 $$
 \begin{aligned}
-\langle |\mathcal{M}|^2 \rangle = \frac{8 g_e^4}{(p_1 - p_3)^4} \big[ (p_1\cdot p_2)(p_3 \cdot p_4) +  (p_2\cdot p_3)(p_4 \cdot p_1) \\
+\langle |\mathcal{M}|^2 \rangle = \frac{8 g_e^4}{(p_1 - p_3)^4} \big[ (p_1\cdot p_2)(p_3 \cdot p_4) +  (p_2\cdot p_3)(p_4 \cdot p_1) \\ \\
 - (Mc)^2(p_1 \cdot p_3) - (mc)^2(p_2 \cdot p_4) + 2(m M c^2)^2 \big]
 \end{aligned}
 $$
@@ -248,7 +240,7 @@ $$
 \begin{aligned}
 \frac{d \sigma}{ d \Omega} = \left(\frac{\hbar}{2 \pi Mc} \right)^2 \frac{g_e^4}{(p_1 - p_3)^4} 
 \big[ (p_1\cdot p_2)(p_3 \cdot p_4) + (p_2\cdot p_3)(p_4 \cdot p_1)
-\\
+\\ \\
 - (Mc)^2(p_1 \cdot p_3) - (mc)^2(p_2 \cdot p_4) + 2(m M c^2)^2
 \big]
 \end{aligned}

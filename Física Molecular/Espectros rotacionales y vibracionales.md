@@ -241,7 +241,7 @@ $$
 R_0 = \sqrt{\frac{\hbar}{2\pi\mu c\Delta\bar{\nu}}} \qquad \mu = \frac{1}{\frac{1}{m_\text{H}} + \frac{1}{m_{\text{Cl}}}} = 0.973 \text{u}
 $$
 
-Luego, la distancia inter-nuclear de equilibrio de la molécula de $\text{HCl}$ será $R_0 = 1.3 \text{Å}$ según los datos.  
+Luego, la distancia inter-nuclear de equilibrio de la molécula de $\text{HCl}$ será $R_0 = 1.3 \text{Å}$ según los datos provistos.  
 
 ### Ejemplo
 
