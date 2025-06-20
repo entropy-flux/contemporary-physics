@@ -61,22 +61,22 @@ Nos interesa la sección transversal diferencia $d\sigma / d\Omega$. Derivando a
 $$
 \frac{d \sigma}{d\Omega} = \left(\frac{\hbar}{8\pi} \frac{|\mathcal{M}|}{Mc} \right)^2  \frac{1}{ |\vec{p}_1| }
 \int
-\frac{\delta(E_1/c - \sqrt{p^2 + m^2c^2})}{\sqrt{p^2 + m^2c^2}} p^2 \delta(|\vec{p}_1| - p)dp
+\frac{\delta(E_1/c - \sqrt{|\vec{p}_3|^2 + m^2c^2})}{\sqrt{|\vec{p}_3|^2 + m^2c^2}} |\vec{p}_3|^2 \delta(|\vec{p}_1| - |\vec{p}_3|)d|\vec{p}_3|
 $$
 
 Reemplazamos ahora:
 
 $$
-u \equiv \sqrt{p^2 + m^2c^2} \Rightarrow \frac{du}{dp} = \frac{p}{\sqrt{p^2+ m^2c^2}} = \frac{p}{u} \Rightarrow pudu = p^2dp
+u \equiv \sqrt{|\vec{p}_3|^2 + m^2c^2} \Rightarrow \frac{du}{d|\vec{p}_3|} = \frac{|\vec{p}_3|}{\sqrt{|\vec{p}_3|^2+ m^2c^2}} = \frac{|\vec{p}_3|}{u} \Rightarrow |\vec{p}_3|udu = |\vec{p}_3|^2d|\vec{p}_3|
 $$
 
 $$
 \frac{d \sigma}{d\Omega} = \left(\frac{\hbar}{8\pi} \frac{|\mathcal{M}|}{Mc} \right)^2 \frac{1}{ |\vec{p}_1| }
 \int
-\frac{\delta(E_1/c - u)}{u} |\vec{p}_1| u du 
+\frac{\delta(E_1/c - u)}{u} |\vec{p}_3| u du 
 $$
 
-En donde el modulo del $4$-momento $p_1$ se cancela y la integral de la delta es simplemente uno. Finalmente la sección transversal diferencial para la dispersión de Mott electrón-muón será simplemente: 
+En donde los módulos de los $4$-momento $p_1$ y $p_3$ se cancelan y la integral de la delta es simplemente uno. Finalmente la sección transversal diferencial para la dispersión de Mott electrón-muón será simplemente: 
 
 $$
 \frac{d \sigma}{d\Omega} = \left(\frac{\hbar}{8\pi} \frac{|\mathcal{M}|}{Mc} \right)^2 
