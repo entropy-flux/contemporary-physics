@@ -157,7 +157,7 @@ $$
 
 En donde $M(^1H)$ es la masa del átomo de hidrógeno, $M_n$ la masa del neutrón, $M(^A_ZX)$ es la masa del nucleido $^A_ZX$ y $N = A - Z$ es el número de neutrones.
 
-#### Ejemplo
+#### Ejemplo: Energía de ligadura de partícula $\alpha$
 
 Veamos un ejemplo. Hallemos la energía de ligadura del $^4\text{He}$ y del $^{208}\text{Pb}$ y evaluemos la energía de ligadura por nucleón. Reemplazando los valores:
 
@@ -179,7 +179,7 @@ Finalmente la energía de ligadura por nucleón, es decir por cada protón o neu
 
 Esta ultima es una medida de estabilidad de los núcleos.
 
-#### Ejemplo
+#### Ejemplo: Energía de ligadura de neutrón
 
 Hallemos la energía necesaria para separar un neutrón de los nucleidos $^{113}\text{Cd}$ y $^{114}\text{Cd}$. Las masas atómicas de los isótopos de Cadmio son respectivamente:
 
@@ -195,7 +195,7 @@ $$
 
 Reemplazando en esta formula se puede ver que se necesitan $6.5\text{MeV}$ y $9.01\text{MeV}$ respectivamente para separar un neutrón de los isotopos $^{113}\text{Cd}$ y $^{114}\text{Cd}$ respectivamente. Se necesita casi un $50\%$ más de energía para separar un neutrón del isotopo $^{114}\text{Cd}$, esto nos indica que este ultimo será más estable.
 
-#### Ejemplo
+#### Ejemplo: Medición de masas atómicas 
 
 Un método para medir masas atómicas con precisión extremadamente alta se denomina doblete de masas. Este método consiste en calibrar el espectrómetro para un valor próximo a la masa a determinar y medir la diferencia de masa entre moléculas de masas muy similares. Un espectrómetro de masa se calibra para la masa $128 \text{u}$.
 
