@@ -1,10 +1,10 @@
 # Física Contemporánea
 
-Bienvenido al repositorio de **Física Contemporánea**. Podes encontrar mis notas en formato markdown en este [repositorio](https://github.com/entropy-flux/contemporary-physics):
+Bienvenido al repositorio de **Física Contemporánea**. Podes encontrar mis notas en formato markdown en este [repositorio](https://github.com/entropy-flux/contemporary-physics).
 
-Podes editarlas con cualquier editor de markdown como obsidian.md y si encontras algún error (que debe haber bastantes) no dudes en avisarme y sentite libre de hacer una pull request si queres corregir o agregar algo. 
+Podes editarlas con cualquier editor de markdown como [obsidian.md](obsidian.md) y si encontras algún error (que debe haber bastantes y hasta cosas mal hechas, tenes que agarrar esto con pinzas) no dudes en avisarme y sentite libre de hacer una pull request si queres corregir o agregar algo.  
 
-Hay temas que no están porque no los alcance a escribir y algunas cosas están distintas, pero esta lo básico, y hay algunos problemas que están resueltos como ejemplos. 
+Hay temas que no están, como laser,  superconductores o relatividad porque no los alcance a escribir y algunas cosas están distintas, pero esta lo básico, y hay algunos problemas que están resueltos como ejemplos. 
 
 ---
 
