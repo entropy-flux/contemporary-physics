@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "03e1307f2954adcc",
+        "id": "01efc10233c532dc",
         "type": "tabs",
         "children": [
           {
-            "id": "67444d8494cd7145",
+            "id": "7bfe626a32c9c0b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -168,13 +168,14 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "0424d846b41d7db6",
+  "active": "7bfe626a32c9c0b0",
   "lastOpenFiles": [
+    "1. Física Molecular/1.1 La molécula de hidrogeno.md",
+    "index.md",
     "1. Física Molecular/1.5 Espectros rotacionales y vibracionales.md",
     "Pasted image 20250624111503.png",
     "assets/20250624111524.png",
     "2. Física Núclear/2.3 Desintegración alfa.md",
-    "1. Física Molecular/1.1 La molécula de hidrogeno.md",
     "1. Física Molecular/1.2 Orbitales moleculares.md",
     "3. Física de Partículas/3.1 Simetrías.md",
     "3. Física de Partículas/3.2 Fermiones.md",
@@ -196,7 +197,6 @@
     "Pasted image 20250621161334.png",
     "assets/20250620181428.png",
     "README.md",
-    "index.md",
     "Sin título 1.md",
     "2. Física Núclear",
     "La molecula de hidrogeno.md",
