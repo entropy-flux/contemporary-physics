@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "01efc10233c532dc",
+        "id": "047d1992902a32af",
         "type": "tabs",
         "children": [
           {
-            "id": "7bfe626a32c9c0b0",
+            "id": "3821cedf80255a59",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "index.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -168,15 +164,17 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "7bfe626a32c9c0b0",
+  "active": "3821cedf80255a59",
   "lastOpenFiles": [
+    "2. Física Núclear/2.1 Estructura nuclear.md",
+    "2. Física Núclear/2.3 Desintegración alfa.md",
+    "2. Física Núclear/2.2 Procesos nucleares.md",
+    "1. Física Molecular/1.2 Orbitales moleculares.md",
     "1. Física Molecular/1.1 La molécula de hidrogeno.md",
     "index.md",
     "1. Física Molecular/1.5 Espectros rotacionales y vibracionales.md",
     "Pasted image 20250624111503.png",
     "assets/20250624111524.png",
-    "2. Física Núclear/2.3 Desintegración alfa.md",
-    "1. Física Molecular/1.2 Orbitales moleculares.md",
     "3. Física de Partículas/3.1 Simetrías.md",
     "3. Física de Partículas/3.2 Fermiones.md",
     "3. Física de Partículas/3.3 Fotones.md",
@@ -184,8 +182,6 @@
     "3. Física de Partículas/3.4.2 Aniquilación Electrón-Positrón.md",
     "3. Física de Partículas/3.4.3 Dispersión de Compton.md",
     "2. Física Núclear/2.4 Desintegración beta.md",
-    "2. Física Núclear/2.2 Procesos nucleares.md",
-    "2. Física Núclear/2.1 Estructura nuclear.md",
     "1. Física Molecular/1.4 Interacción de Van Der Wals.md",
     "1. Física Molecular/1.3 El enlace iónico.md",
     "assets/20250622000655.png",
