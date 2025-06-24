@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Física Molecular/1.5 Espectros rotacionales y vibracionales.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.5 Espectros rotacionales y vibracionales"
+              "title": "index"
             }
           }
         ]
@@ -168,10 +168,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "67444d8494cd7145",
+  "active": "0424d846b41d7db6",
   "lastOpenFiles": [
-    "Pasted image 20250624111503.png",
     "1. Física Molecular/1.5 Espectros rotacionales y vibracionales.md",
+    "Pasted image 20250624111503.png",
     "assets/20250624111524.png",
     "2. Física Núclear/2.3 Desintegración alfa.md",
     "1. Física Molecular/1.1 La molécula de hidrogeno.md",
