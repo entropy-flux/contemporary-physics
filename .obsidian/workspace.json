@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Física Núclear/2.4 Desintegración beta.md",
+                "file": "2. Física Núclear/2.2 Procesos nucleares.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.4 Desintegración beta"
+              "title": "2.2 Procesos nucleares"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "ba073ec4186818f9",
@@ -171,13 +170,13 @@
   },
   "active": "3821cedf80255a59",
   "lastOpenFiles": [
-    "assets/20250627000904.png",
     "2. Física Núclear/2.3 Desintegración alfa.md",
+    "2. Física Núclear/2.4 Desintegración beta.md",
+    "assets/20250627000904.png",
     "2. Física Núclear/2.2 Procesos nucleares.md",
     "2. Física Núclear/2.1 Estructura nuclear.md",
     "3. Física de Partículas/3.4.1 Dispersión Electrón-Muón.md",
     "1. Física Molecular/1.2 Orbitales moleculares.md",
-    "2. Física Núclear/2.4 Desintegración beta.md",
     "3. Física de Partículas/3.4.2 Aniquilación Electrón-Positrón.md",
     "3. Física de Partículas/3.1 Simetrías.md",
     "3. Física de Partículas/3.2 Fermiones.md",
@@ -199,7 +198,6 @@
     "assets/20250621161506.png",
     "assets/20250621161357.png",
     "Pasted image 20250621161334.png",
-    "assets/20250620181428.png",
     "Sin título 1.md",
     "2. Física Núclear",
     "La molecula de hidrogeno.md",
